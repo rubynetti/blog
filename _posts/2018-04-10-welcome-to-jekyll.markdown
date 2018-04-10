@@ -1,14 +1,18 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  SigmaJS
 date:   2018-04-10 09:40:22 +0200
-categories: jekyll update
+categories: sigma javascript
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Ogni istanza di sigma è basata su due elementi:
 
-Jekyll also offers powerful support for code snippets:
+- [**graph model**](https://github.com/jacomyal/sigma.js/wiki/Graph-API)
+- [**controller**](https://github.com/jacomyal/sigma.js/wiki/Public-API)
+
+Il **graph model** è una parte di sigma che aiuta nella manipolazione del dato.
+Il **controller** fornisce metodi per interfacciarsi con il processo di rendering, i dati e la tua applicazione.
+
 
 {% highlight ruby %}
 def print_hi(name)
@@ -17,9 +21,3 @@ end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
