@@ -24,6 +24,16 @@ Come linea guida pensa allo sviluppatore junior che dovrà prendere in mano il c
 Scrivendo le cose in modo semplice e standard Rails anche lui potrà prendere
 il codice in mano senza problema alcuno.
 
+## Test
+
+Dopo l'esplorazione per capire come affrontare il problema è importante realizzare almeno il test di integrazione almeno sul controller.
+Spesso le tempistiche del cliente o le nostre stime ci impediscono uno sviluppo TDD corretto al 100%.
+
+Altro elemento importante:
+una volta individuato un bug è opportuno metterci sopra un test a guardia di eventuali ripetizioni del problema.
+
+È importante ricordarsi di lanciare i test prima del rilascio compresi quelli di sistema.
+
 ---
 
 # Frontend
@@ -33,6 +43,36 @@ il codice in mano senza problema alcuno.
 - Prepara i dati il più possibile prima di passarli alla view.
 - La view dovrebbero avere meno logica possibile.
 - Se si ha davanti una situazione complessa pensare ad un oggetto intermedio come un view object.
+- Se il model è molto semplice può anche valer la pena di preparare i dati per la view all'interno del model.
+
+{% highlight ruby %}
+  # app/models/internal_data.rb
+
+  class InternalData < ApplicationRecord
+
+    validates :arca_id, presence: true, if: :cliente?
+
+    def cliente?
+      status_id == 2 ? true : false
+    end
+
+    def table_data
+      [
+        {
+          label: self.class.human_attribute_name(:agent),
+          value: agent.name_and_surname
+        }
+      ]
+    end
+
+  end
+{% endhighlight %}
+
+{% highlight ruby %}
+  # app/views/internal_data/show.haml
+  = render 'shared/table_rows', data: @internal_data.table_data
+{% endhighlight %}
+
 - Tieni in considerazione gli helper ma non abusarne.
 
 ## Bootstrap 3/4
@@ -44,7 +84,7 @@ il codice in mano senza problema alcuno.
 
 ---
 
-# Style Guide
+# Guida allo stile di scrittura del codice.
 
 ## Indentazioni in Ruby
 
@@ -56,19 +96,22 @@ Preferire la leggibilità e lo spazio tra gli elementi.
 
 # Bad
 
-{ label: "test 1",
+[{ label: "test 1",
   value: 1 },
 { label: "test 2",
-  value: 2 }
+  value: 2 }]
 
 # Good
 
-{
-  label: "test 1",
-  value: 1
-},
-{
-  label: "test 2",
-  value: 2
-}
+[
+  {
+    label: "test 1",
+    value: 1
+  },
+  {
+    label: "test 2",
+    value: 2
+  }
+]
+
 {% endhighlight %}
