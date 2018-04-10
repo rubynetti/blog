@@ -21,7 +21,7 @@ Referenze:
 
 - [Derek Prior - In Relentless Pursuit of REST](In Relentless Pursuit of REST)
 
-### Pensa semplice - Boring is better
+### Pensa semplice, noioso è meglio.
 
 Meglio scrivere codice prevedibile piuttosto che codice smart.
 Come linea guida pensa allo sviluppatore junior che dovrà prendere in mano il codice.
