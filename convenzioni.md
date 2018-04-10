@@ -28,6 +28,13 @@ il codice in mano senza problema alcuno.
 
 # Frontend
 
+## Organizzazione delle views
+
+- Prepara i dati il più possibile prima di passarli alla view.
+- La view dovrebbero avere meno logica possibile.
+- Se si ha davanti una situazione complessa pensare ad un oggetto intermedio come un view object.
+- Tieni in considerazione gli helper ma non abusarne.
+
 ## Bootstrap 3/4
 
 ## HAML / Pug
