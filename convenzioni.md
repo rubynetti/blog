@@ -40,39 +40,46 @@ una volta individuato un bug è opportuno metterci sopra un test a guardia di ev
 
 ## Organizzazione delle views
 
+Abbiamo valutato molte alternative tra cui:
+
+- Utilizzo avanzato dei partial
+- Decoratori: [Draper](https://github.com/drapergem/draper)
+- Layer aggiuntivi: [Cell](https://github.com/trailblazer/cells)
+- Oggetti ruby semplici (Poro Object)
+- View Object
+- Framework JS seperati
+
+Per quanto molte di queste strategie sono certamente intelligenti aggiungono complessità e lavoro e non ci hanno mai soddisfatto al 100%.
+
+Per chiarezza al momento stiamo utilizzando una tecnica inizialmente emersa grazie all'uso di VueJs (e quindi alla necessità di dover forzatamente distinguere alcune fasi nella comunicazioni dei dati tra una parte e l'altra dell'applicazione).
+
+La tecnica è molto semplice e si basa esclusivamente sull'uso degli strumenti base di Rails.
+
+Sappiamo che la tecnica indviduata è decisamente poco ortodossa rispetto ai principi classici che vengono esposti dagli _esperti_ ma risulta molto comoda e capace almeno per ora di coprire egregiamente i nostri casi.
+
+{% highlight haml %}
+  -# show.haml
+  :ruby
+    data = [
+      {
+        label: BusinessArea::InternalData.human_attribute_name(:agent),
+        value: link_to_if(@business.agent.present?, @business.agent.name_and_surname, @business.agent)
+      },
+      {
+        label: BusinessArea::InternalData.human_attribute_name(:arca_id),
+        value: @business.arca_id
+      }
+    ]
+
+  %table.table= render 'shared/table_rows', data: data
+{% endhighlight %}
+
+## Principi che abbiamo valutato (ma non necessariamente adottato)
+
 - Prepara i dati il più possibile prima di passarli alla view.
 - La view dovrebbero avere meno logica possibile.
 - Se si ha davanti una situazione complessa pensare ad un oggetto intermedio come un view object.
 - Se il model è molto semplice può anche valer la pena di preparare i dati per la view all'interno del model.
-
-{% highlight ruby %}
-  # app/models/internal_data.rb
-
-  class InternalData < ApplicationRecord
-
-    validates :arca_id, presence: true, if: :cliente?
-
-    def cliente?
-      status_id == 2 ? true : false
-    end
-
-    def table_data
-      [
-        {
-          label: self.class.human_attribute_name(:agent),
-          value: agent.name_and_surname
-        }
-      ]
-    end
-
-  end
-{% endhighlight %}
-
-{% highlight ruby %}
-  # app/views/internal_data/show.haml
-  = render 'shared/table_rows', data: @internal_data.table_data
-{% endhighlight %}
-
 - Tieni in considerazione gli helper ma non abusarne.
 
 ## Bootstrap 3/4
