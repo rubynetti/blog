@@ -5,26 +5,31 @@
 layout: post
 ---
 
-# Backend
+## Backend
 
-## Prima l'HTML
+### Prima l'HTML
 
-## Pensa in REST
+Anche se il cliente chiede un determinato dato in Excel o in un formato X è sempre conveniente _rimanere sui binari_ e realizzare comunque una visualizzazione del dato in html ancor prima di realizzare la visualizzazione del dato nel formato richiesto.  
+In questo modo diventa molto facile pensare contemporaneamente in Railsese e soddisfare in modo efficace il cliente.  
+È inoltre semplice per tutti esplorare il codice e poterlo migliorare o modificare a seconda delle necessità.
 
-Utilizzo di resource come strumento di guida.
+### Pensa in REST
+
+Utilizzo di risorse REST resource come strumento di guida.
 
 Referenze:
 
-- Derek Prior Think in Rest (trova il link)
+- [Derek Prior - In Relentless Pursuit of REST](In Relentless Pursuit of REST)
 
-## Pensa semplice
+### Pensa semplice - Boring Code
 
 Meglio scrivere codice prevedibile piuttosto che codice smart.
 Come linea guida pensa allo sviluppatore junior che dovrà prendere in mano il codice.
 Scrivendo le cose in modo semplice e standard Rails anche lui potrà prendere
 il codice in mano senza problema alcuno.
+Meglio codice noioso chiaro che un codice brillante difficile da decodificare per gli altri sviluppatori.
 
-## Test
+### Test
 
 Dopo l'esplorazione per capire come affrontare il problema è importante realizzare almeno il test di integrazione almeno sul controller.
 Spesso le tempistiche del cliente o le nostre stime ci impediscono uno sviluppo TDD corretto al 100%.
@@ -34,11 +39,14 @@ una volta individuato un bug è opportuno metterci sopra un test a guardia di ev
 
 È importante ricordarsi di lanciare i test prima del rilascio compresi quelli di sistema.
 
----
+### Programmare in coppia
+Il _pair programming_ è in generale una buona idea.  
+Quando è possibile meglio farlo.  
+Se si programma da soli è importante ricordarsi di condividere con la squadra di lavoro le parti più complesse.
 
-# Frontend
+## Frontend
 
-## Organizzazione delle views
+### Organizzazione delle views
 
 Abbiamo valutato molte alternative tra cui:
 
@@ -71,10 +79,23 @@ Sappiamo che la tecnica indviduata è decisamente poco ortodossa rispetto ai pri
       }
     ]
 
-  %table.table= render 'shared/table_rows', data: data
+  = render 'shared/table', data: data
 {% endhighlight %}
 
-## Principi che abbiamo valutato (ma non necessariamente adottato)
+Nel caso in cui l'hash diventi complesso non disdegniamo l'uso di classi ruby al cui interno includere gli helper della view.
+
+{% highlight ruby %}
+class BusinessArea::AdminMenuView
+  delegate :url_helpers, to: 'Rails.application.routes'
+  # [...]
+
+  def financial_url
+    url_helpers.admin_business_financial_infos_path(@business)
+  end
+end
+{% endhighlight %}
+
+### Principi che abbiamo valutato (ma non necessariamente adottato)
 
 - Prepara i dati il più possibile prima di passarli alla view.
 - La view dovrebbero avere meno logica possibile.
@@ -82,20 +103,17 @@ Sappiamo che la tecnica indviduata è decisamente poco ortodossa rispetto ai pri
 - Se il model è molto semplice può anche valer la pena di preparare i dati per la view all'interno del model.
 - Tieni in considerazione gli helper ma non abusarne.
 
-## Bootstrap 3/4
+### Bootstrap 3/4
 
-## HAML / Pug
+### HAML / Pug
 
-## VueJs / Stimulus
+### VueJs / Stimulus
 
+## Guida allo stile di scrittura del codice.
 
----
+### Indentazioni in Ruby
 
-# Guida allo stile di scrittura del codice.
-
-## Indentazioni in Ruby
-
-### Hash
+#### Hash
 
 Preferire la leggibilità e lo spazio tra gli elementi.
 
