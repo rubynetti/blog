@@ -21,7 +21,7 @@ Referenze:
 
 - [Derek Prior - In Relentless Pursuit of REST](In Relentless Pursuit of REST)
 
-### Pensa semplice - Boring Code
+### Pensa semplice - Boring is better
 
 Meglio scrivere codice prevedibile piuttosto che codice smart.
 Come linea guida pensa allo sviluppatore junior che dovrà prendere in mano il codice.
@@ -40,7 +40,7 @@ una volta individuato un bug è opportuno metterci sopra un test a guardia di ev
 È importante ricordarsi di lanciare i test prima del rilascio compresi quelli di sistema.
 
 ### Programmare in coppia
-Il _pair programming_ è in generale una buona idea.  
+Il _pair programming_ è in generale una ottima idea.  
 Quando è possibile meglio farlo.  
 Se si programma da soli è importante ricordarsi di condividere con la squadra di lavoro le parti più complesse.
 
@@ -106,6 +106,11 @@ end
 ### Bootstrap 3/4
 
 ### HAML / Pug
+
+L'uso di [HAML](http://haml.info/), [Pug](https://pugjs.org/api/getting-started.html), [Slim](http://slim-lang.com/) rende il codice HTML un piacere da leggere e da scrivere.
+Inoltre rende assai più semplice il debug.
+Per quello adottiamo ogni volta che possiamo questo genere di strumenti.
+Generalmente usiamo HAML perchè è lo strumento con cui abbiamo più esperienza.
 
 ### VueJs / Stimulus
 
