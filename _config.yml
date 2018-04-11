@@ -32,7 +32,7 @@ external_links: [
 
 # Build settings
 markdown: kramdown
-theme: teatro-vecchio
+# theme: teatro-vecchio
 remote_theme: teatro-vecchio
 plugins:
   - jekyll-feed
