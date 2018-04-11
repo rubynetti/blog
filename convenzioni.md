@@ -20,6 +20,7 @@ Utilizzo di risorse REST resource come strumento di guida.
 Referenze:
 
 - [Derek Prior - In Relentless Pursuit of REST](In Relentless Pursuit of REST)
+- [Form Objects](https://robots.thoughtbot.com/activemodel-form-objects)
 
 ### Pensa semplice, noioso è meglio.
 
