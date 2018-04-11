@@ -22,13 +22,17 @@ description: >- # this means to ignore newlines until "baseurl:"
   Lavoriamo soprattutto per/con venezia86.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
-github_username:  rubynetti
 
-author: venezia86.it
+
+external_links: [
+    ['http://venezia86.it', 'venezia86.it'],
+    ['https://simonini.github.io/', 'simonini.github.io'],
+    ['https://rubynetti.github.io/', 'rubynetti.github.io']
+  ]
+
 # Build settings
 markdown: kramdown
-theme: minima
+theme: teatro-vecchio
 plugins:
   - jekyll-feed
 
