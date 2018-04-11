@@ -8,16 +8,17 @@ title: Convenzioni per progetti Ruby On Rails
 
 ## Introduzione
 
-Queste sono alcune delle convenzioni e delle decisioni che abbiamo preso come squadra di lavoro per quanto riguarda le applicazioni che scriviamo con il framework Ruby On Rails.  
-Chi conosce il framework ci vedrà una discreta soggettività e probabilmente anche molte lacune ma in ogni caso questo è inteso come l'inizio di un percorso di decisioni che progressivamente vorremo migliorare e riempire.
+Queste sono alcune delle convenzioni e delle decisioni che abbiamo preso come squadra di lavoro per quanto riguarda le applicazioni che scriviamo con il framework **Ruby On Rails**.  
+Chi conosce il framework ci vedrà una discreta soggettività e probabilmente anche molte lacune.
+Non abbiamo l'ambizione di credere che nessuna di queste decisioni siano _scolpite nella roccia_. Anzi.
+Ciò che è stato scritto (e verrà scritto) è frutto di situazioni che hanno a che fare con reali progetti di lavoro e reali commissioni ma sono decisioni liquide che funzionano soprattutto da **bussola** per **evitare di ridiscutere ogni volta le nostre decisioni**.  
+Allo stesso tempo se emergeranno tecniche o soluzioni migliori cambieremo quanto scritto senza porci particolari problemi.  
+In ogni caso quelle scritte di seguito sono decisioni che trovano applicazione pratica nel mondo reale lavorativo.  
+Non sono frutto di particolare speculazioni teoriche approfondite ne seguono una scuola di pensiero in particolare.  
+Trattasi di un _melting pot_ di esperienza personale, materiale preso da internet, libri etc.
+In ogni caso questo è inteso come l'inizio di un percorso di decisioni che progressivamente vorremo migliorare e riempire di ulteriori contenuti.
 
 ## Backend
-
-### Prima l'HTML
-
-Anche se il cliente chiede un determinato dato in Excel o in un formato X è sempre conveniente _rimanere sui binari_ e realizzare comunque una visualizzazione del dato in html ancor prima di realizzare la visualizzazione del dato nel formato richiesto.  
-In questo modo diventa molto facile pensare contemporaneamente in Railsese e soddisfare in modo efficace il cliente.  
-È inoltre semplice per tutti esplorare il codice e poterlo migliorare o modificare a seconda delle necessità.
 
 ### Pensa in REST
 
@@ -35,6 +36,12 @@ Come linea guida pensa allo sviluppatore junior che dovrà prendere in mano il c
 Scrivendo le cose in modo semplice e standard Rails anche lui potrà prendere
 il codice in mano senza problema alcuno.
 Meglio codice noioso chiaro che un codice brillante difficile da decodificare per gli altri sviluppatori.
+
+### Prima l'HTML
+
+Anche se il cliente chiede un determinato dato in Excel o in un formato X è sempre conveniente _rimanere sui binari_ e realizzare comunque una visualizzazione del dato in html ancor prima di realizzare la visualizzazione del dato nel formato richiesto.  
+In questo modo diventa molto facile pensare contemporaneamente in Railsese e soddisfare in modo efficace il cliente.  
+È inoltre semplice per tutti esplorare il codice e poterlo migliorare o modificare a seconda delle necessità.
 
 ### Test
 
