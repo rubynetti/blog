@@ -27,7 +27,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 external_links: [
     ['http://venezia86.it', 'venezia86.it'],
     ['https://simonini.github.io/', 'simonini.github.io'],
-    ['https://rubynetti.github.io/', 'rubynetti.github.io']
+    ['https://github.com/rubynetti/rubynetti.github.io', 'github.com/rubynetti']
   ]
 
 # Build settings
