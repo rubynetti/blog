@@ -3,7 +3,13 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
+title: Convenzioni per progetti Ruby On Rails
 ---
+
+## Introduzione
+
+Queste sono alcune delle convenzioni e delle decisioni che abbiamo preso come squadra di lavoro per quanto riguarda le applicazioni che scriviamo con il framework Ruby On Rails.  
+Chi conosce il framework ci vedrà una discreta soggettività e probabilmente anche molte lacune ma in ogni caso questo è inteso come l'inizio di un percorso di decisioni che progressivamente vorremo migliorare e riempire.
 
 ## Backend
 
