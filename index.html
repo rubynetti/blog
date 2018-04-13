@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="home">
+
+    {% for post in site.posts %}
+      <p>
+        <span class="post-meta" style="float: right; margin-left: 10px">{{ post.date | date: "%d/%m/%Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </p>
+    {% endfor %}
+
+
+  <a href="/categorie">Esplora per categorie</a>
+</div>
