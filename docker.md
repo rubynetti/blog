@@ -41,8 +41,8 @@ Another perk i enjoy is the possibility to try any sort of software upgrade in t
 
 Official guides are very detailed and always up to date, i reccomend to carefully read and follow every installation step for your OS. If you are working on Linux i really suggest to install Compose [shell completions](https://docs.docker.com/compose/completion/) also.
 
-Dockerfile(https://docs.docker.com/engine/reference/builder/)
-and Compose(https://docs.docker.com/compose/compose-file/)
+[Dockerfile](https://docs.docker.com/engine/reference/builder/)
+and [Compose](https://docs.docker.com/compose/compose-file/)
 references were very useful for me. Every command and option is explained clearly and in depth.
 
 After that, you just have to add a couple of files to to your project to configure its containers.
