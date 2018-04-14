@@ -44,13 +44,13 @@ Another perk I enjoy is the possibility to try any sort of software upgrade in t
 
 ## What about the downsides?
 
-The configuration of Docker/Compose dan be a pain, particularly if you are a beginner. But once is done it's there and you can spawn your app on any machine (with Docker installed) in no time.
+The configuration of Docker/Compose can be a pain, particularly if you are a beginner. But once it's done is there and you can spawn your app on any machine (with Docker installed) in no time.
 
 Sometime Rails basic configuration is tougher using Docker. Launching system tests inside a container was not the easiest thing to implement.
 
-As some problems are solved by contaneirize applications, new ones are created.
-For instance, bundle breaks more easily when switching between branches, if you don't know how to fix it can be frustrating.
-This sort of problems anyway can be generally avoided, if you are willing to get used to slightly different patterns while developing.
+As some problems are solved by contaneirizing applications, new ones are created.
+For instance, bundle breaks more easily when switching between branches and if you don't know how to fix it can be frustrating.
+This sort of problems can be generally avoided, if you are willing to get used to slightly different patterns while developing.
 
 
 ## So, I'm a Ruby on Rails developer wishing to try Docker, what should I do?
