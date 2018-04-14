@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Docker Development for Ruby on Rails
+categories: docker rails
+author: Giacomo Bertoldi
 ---
 
 
@@ -38,7 +40,19 @@ As I said before, nothing to configure, you pull the images and are ready to go!
 Another perk I enjoy is the possibility to try any sort of software upgrade in the container, without risk. If something breaks, you just go back to the previous version of your docker files.
 
 
+## What about the downsides?
+
+The configuration of Docker/Compose dan be a pain, particularly if you are a beginner. But once is done it's there and you can spawn your app on any machine (with Docker installed) in no time.
+
+Sometime Rails basic configuration is tougher using Docker. Launching system tests inside a container was not the easiest thing to implement.
+
+As some problems are solved by contaneirize applications, new ones are created.
+For instance, bundle breaks more easily when switching between branches, if you don't know how to fix it can be frustrating.
+This sort of problems anyway can be generally avoided, if you are willing to get used to slightly different patterns while developing.
+
+
 ## So, I'm a Ruby on Rails developer wishing to try Docker, what should I do?
+
 * [install docker](https://docs.docker.com/)
 * [install docker-compose](https://docs.docker.com/compose/install/)
 
