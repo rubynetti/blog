@@ -38,7 +38,7 @@ As I said before, nothing to configure, you pull the images and are ready to go!
 Another perk I enjoy is the possibility to try any sort of software upgrade in the container, without risk. If something breaks, you just go back to the previous version of your docker files.
 
 
-## So, I'm a Ruby oo Rails developer wishing to try Docker, what should I do?
+## So, I'm a Ruby on Rails developer wishing to try Docker, what should I do?
 * [install docker](https://docs.docker.com/)
 * [install docker-compose](https://docs.docker.com/compose/install/)
 
