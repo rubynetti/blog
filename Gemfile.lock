@@ -60,7 +60,7 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    teatro-vecchio (0.1.3)
+    teatro-vecchio (0.1.6)
       jekyll (~> 3.7)
       jekyll-seo-tag (~> 2.4)
 
@@ -68,10 +68,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (~> 3.7.3)
   jekyll-feed (~> 0.6)
   minima (~> 2.0)
-  teatro-vecchio (~> 0.1.3)
+  teatro-vecchio (~> 0.1.6)
   tzinfo-data
 
 BUNDLED WITH
