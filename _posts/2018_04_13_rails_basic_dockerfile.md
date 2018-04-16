@@ -102,5 +102,8 @@ Configuration is verbose and clumsy using Docker alone, that's where [Compose](h
 
 <hr/>
 
+**Previous step:**
+[Docker Development for RoR](/_posts/2018-04-13-docker-rails-development.md)
+
 **Next step:**
 Adding docker-compose.yml _(coming soon)_
