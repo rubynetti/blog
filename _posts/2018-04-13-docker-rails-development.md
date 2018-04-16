@@ -68,4 +68,4 @@ After that, you just have to add a couple of files to your project to configure 
 
 <hr/>
 
-**Next step:** Adding the Dockerfile _(coming soon)_
+**Next step:** [Adding the Dockerfile](/_posts/2018_04_13_rails_basic_dockerfile.md)
