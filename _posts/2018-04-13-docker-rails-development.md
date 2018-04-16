@@ -58,7 +58,7 @@ This sort of problems can be generally avoided, if you are willing to get used t
 * [install docker](https://docs.docker.com/)
 * [install docker-compose](https://docs.docker.com/compose/install/)
 
-Official guides are very detailed and always up to date, i recommend to carefully read and follow every installation step for your OS. If you are working on Linux I really suggest installing Compose [shell completions](https://docs.docker.com/compose/completion/) also.
+Official guides are very detailed and always up to date, i recommend to carefully read and follow every installation step for your OS. I really suggest installing Compose [shell completions](https://docs.docker.com/compose/completion/) also.
 
 [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 and [Compose](https://docs.docker.com/compose/compose-file/)
