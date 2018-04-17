@@ -1,0 +1,7 @@
+global:
+  description: >- # this means to ignore newlines until "baseurl:"
+    We write web software.
+    Mostly with Ruby On Rails.
+    We are in Venice and Mestre, Italy.
+    This website contain notes about our team conventions etc.
+    We work with venezia86.
