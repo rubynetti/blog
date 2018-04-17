@@ -124,7 +124,7 @@ To build the image for our container we just need to ```sudo docker build . my-a
 #### Running the container
 
 You can now run a new container from the image and start an interactive shell inside it like this
-(```--rm``` option makes sure this container will be removed when we close it).
+(_--rm_ option makes sure this container will be removed when we close it).
 ```
 $ sudo docker run --rm -it my-awesome-app bash
 ```
