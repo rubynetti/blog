@@ -93,14 +93,14 @@ Using _Debian_ standard syntax we create a _rails_  user with the default 1000 U
 ```Dockerfile
 RUN useradd -u 1000 -Um rails && \
 ```
-In the same layer, we give the new user ownership of the app directory.
+In the same layer then we give the new user ownership of the app directory.
 ```Dockerfile
     chown -R rails:rails /app
 ```
 
 #### Set the default user
 
-With the _USER_ command we then make rails the default user of the container.
+With the _USER_ command we make rails the default user of the image.
 
 Every remaining command in the _Dockerfile_ will be run as this user,
 as the main process of the service and the commands that will be called from outside the container.
@@ -108,9 +108,9 @@ as the main process of the service and the commands that will be called from out
 USER rails
 ```
 
-#### Building the container
+#### Building the image
 
-That's it, we should have a _Dokerfile_ like [_this_](https://github.com/rubynetti/ror-docker-templates/blob/master/basic/Dockerfile) in the root of our application.
+That's it, there should be a _Dokerfile_ like [_this_](https://github.com/rubynetti/ror-docker-templates/blob/master/basic/Dockerfile) in the root of the application.
 
 To build the image for our container we just need to ```sudo docker build . my-awsome-app```
 (_sudo_ may not be necessary, depending on you OS and user configuration)
@@ -118,13 +118,30 @@ To build the image for our container we just need to ```sudo docker build . my-a
 
 #### Running the container
 
-You can now run the container and start an interactive shell inside it like this
-``` sudo docker run --rm -p 3000:3000 -v "$(pwd)":/app -it trellohours_web bash```
-Inside you can do all usual staff like running bundler and migrations.
+You can now run a new container from the image and start an interactive shell inside it like this
+(```--rm``` option makes sure this container will be removed when we close it).
+```
+$ sudo docker run --rm -it my-awesome-app bash
+```
+You'll find yourself to a prompt like this
+```
+root@container_id:/app#
+```
 
-It's very long and we have just started a shell, not the actual RoR application so where do we go from here?
+Not too exciting, huh?
+There's almost nothing in it, just debian and ruby.
 
-Configuration is verbose and clumsy using Docker alone, that's where [Compose](https://docs.docker.com/compose/) come to help!
+You can try some commands on the _ruby shell_ to check everything is in place.
+Then just exit the container for now.
+```
+root@container_id:/app# irb
+irb(main):001:0> 2+2==5
+=> false
+irb(main):002:0> exit
+root@container_id:/app# exit
+```
+
+In the next section, we are going to explore how to execute a Rails app inside a container like this.
 
 
 <hr/>
@@ -133,4 +150,4 @@ Configuration is verbose and clumsy using Docker alone, that's where [Compose](h
 [Docker Development for RoR](/_posts/2018-04-13-docker-rails-development.md)
 
 **Next step:**
-Adding docker-compose.yml _(coming soon)_
+Running a RoR app inside a container _(coming soon)_
