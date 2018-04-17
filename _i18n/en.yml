@@ -1,6 +1,7 @@
 global:
   description: >- # this means to ignore newlines until "baseurl:"
-    We develop web applications, often using Ruby On Rails.
+    We develop web applications,
+    mostly using Ruby On Rails.
     We are located near Venice, in Italy.
     This blog contains notes about our team conventions, habits etc.
     We often work with venezia86.
