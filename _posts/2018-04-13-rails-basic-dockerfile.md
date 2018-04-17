@@ -146,7 +146,7 @@ irb(main):002:0> exit
 root@container_id:/app# exit
 ```
 
-In the next section, we are going to explore how to execute a Rails app inside a container like this.
+In the next section, we are going to explore how to execute a Rails app inside the container.
 
 
 <hr/>
