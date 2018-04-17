@@ -12,7 +12,7 @@ You should avoid creating too many, but it's good for readability and reusabilit
 
 The resulting image will be the "blank" state for our container to be run, so should already hold everything our service will need. It should not be changed too often but, if you keep it tidy and thin, working on it later during the app development won't be a problem.
 
-First thing we need to do is create a file named _Dockerfile_ in the working directory of our application.
+First thing we need to do is creating a file named _Dockerfile_ in the working directory of our application.
 
 This is what we want to end up with
 ```Dockerfile
@@ -118,13 +118,13 @@ USER rails
 That's it, there should be a _Dokerfile_ like [_this_](https://github.com/rubynetti/ror-docker-templates/blob/master/basic/Dockerfile) in the root of the application.
 
 To build the image for our container we just need to ```sudo docker build . my-awsome-app```
-(_sudo_ may not be necessary, depending on you OS and user configuration)
+(_sudo_ may not be necessary, depending on you OS and user configuration).
 
 
 #### Running the container
 
 You can now run a new container from the image and start an interactive shell inside it like this
-(```--rm``` option makes sure this container will be removed when we close it).
+(_--rm_ option makes sure this container will be removed when we close it).
 ```
 $ sudo docker run --rm -it my-awesome-app bash
 ```
@@ -146,7 +146,7 @@ irb(main):002:0> exit
 root@container_id:/app# exit
 ```
 
-In the next section, we are going to explore how to execute a Rails app inside a container like this.
+In the next section, we are going to explore how to execute a Rails app inside the container.
 
 
 <hr/>
