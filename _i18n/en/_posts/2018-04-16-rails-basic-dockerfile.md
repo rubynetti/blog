@@ -94,7 +94,7 @@ Same goes for other commands like bundle, that is not supposed to be run as root
 I feel much more comfortable running the service as an unprivileged user by default, than having to care how to interact with the container as a different user every time
 (you sure can do that but I find it prone to mistakes).
 
-Using _Debian_ standard syntax we create a _rails_  user with the default 1000 UID, belonging to a group with the same name and having a home directory. 
+Using _Debian_ standard syntax we create a _rails_  user with the default 1000 UID, belonging to a group with the same name and having a home directory.
 ```Dockerfile
 RUN useradd -u 1000 -Um rails && \
 ```
@@ -152,7 +152,7 @@ In the next section, we are going to explore how to execute a Rails app inside t
 <hr/>
 
 **Previous step:**
-[Docker Development for RoR](/_posts/2018-04-13-docker-rails-development.md)
+[Docker Development for RoR]({% post_url 2018-04-13-docker-rails-development %})
 
 **Next step:**
 Running RoR Inside a Container _(coming soon)_
