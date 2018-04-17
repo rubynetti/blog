@@ -17,7 +17,7 @@ I found a number of example _Dockerfiles_ (and _docker-compose_ files) around bu
 
 So, I decided to write down the solutions I came up with as for now, in case anyone was struggling as I was :)
 
-**TL;DR**\
+**TL;DR**<br/>
 You can find a list of Docker with Compose for RoR files examples [here](https://github.com/rubynetti/ror-docker-templates).
 
 ## Yes, but why should I dockerize my app?
@@ -58,7 +58,7 @@ This sort of problems can be generally avoided, if you are willing to get used t
 * [install docker](https://docs.docker.com/)
 * [install docker-compose](https://docs.docker.com/compose/install/)
 
-Official guides are very detailed and always up to date, i recommend to carefully read and follow every installation step for your OS. If you are working on Linux I really suggest installing Compose [shell completions](https://docs.docker.com/compose/completion/) also.
+Official guides are very detailed and always up to date, i recommend to carefully read and follow every installation step for your OS. I really suggest installing Compose [shell completions](https://docs.docker.com/compose/completion/) also.
 
 [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 and [Compose](https://docs.docker.com/compose/compose-file/)
