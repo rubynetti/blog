@@ -1,4 +1,9 @@
-## Adding the Dockerfile
+---
+layout: post
+title: Adding the Dockerfile
+categories: docker rails
+author: Giacomo Bertoldi
+---
 
 The Dockerfile is a simple text file that set the steps to build the Docker _image_ for our service.
 
