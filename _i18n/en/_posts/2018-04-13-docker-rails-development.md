@@ -1,4 +1,4 @@
----
+({% post_url 2010-09-08-welcome-to-jekyll %}---
 layout: post
 title: Docker Development for Ruby on Rails
 categories: docker rails
@@ -68,4 +68,4 @@ After that, you just have to add a couple of files to your project to configure 
 
 <hr/>
 
-**Next step:** [Adding the Dockerfile](/_posts/2018_04_13_rails_basic_dockerfile.md)
+**Next step:** [Adding the Dockerfile]({% post_url 2018-04-16-rails-basic-dockerile %}
