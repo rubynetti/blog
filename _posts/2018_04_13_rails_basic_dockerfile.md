@@ -1,11 +1,36 @@
 ## Adding the Dockerfile
 
-The Dockerfile is a simple text file that set the layers for building the image of our service.
+The Dockerfile is a simple text file that set the steps to build the Docker _image_ for our service.
 
-Every instruction we write is a layer on top of which the others are built, and everyone is **cached**.
-You should avoid creating too many, but it's good for readability and reusability that you keep different actions in different layers.
+Every instruction in it constitutes a layer on top of which the subsequents are built.
+You should avoid creating too many, but it's good for readability and reusability that you keep different concepts in different layers.
 
-We just have to create a file named _Dockerfile_ in the working directory of our application and edit it.
+The resulting image will be the "blank" state for our container to be run, so should already contain everything our service will need. It should not be changed too often but, if you keep it tidy and thin, working on it later during the app development won't be a problem.
+
+First thing we need to do is create a file named _Dockerfile_ in the working directory of our application.
+
+This is what we want to end up with
+```Dockerfile
+# /path-to-my-awesome-app/Dockerfile
+
+# select the base image
+FROM ruby:2.5
+
+# install Node.js
+RUN apt-get update -qq && \
+    apt-get install -y build-essential nodejs
+
+# set the working dir
+RUN mkdir /app
+WORKDIR /app
+
+# add "rails" default user
+RUN useradd -u 1000 -Um rails && \
+    chown -R rails:rails /app
+USER rails
+```
+
+Every line in it is explained in detail below.
 
 
 #### Select the base image
