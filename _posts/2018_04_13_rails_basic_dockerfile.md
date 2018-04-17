@@ -155,4 +155,4 @@ In the next section, we are going to explore how to execute a Rails app inside a
 [Docker Development for RoR](/_posts/2018-04-13-docker-rails-development.md)
 
 **Next step:**
-Running a RoR app inside a container _(coming soon)_
+Running RoR Inside a Container _(coming soon)_
