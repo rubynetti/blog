@@ -77,23 +77,24 @@ WORKDIR /app
 
 #### Create the _rails_ user
 
-Since now, if you were to build and run a container with this image, default user would be _root_.
+Since now, if you were to build and run a container from this image, its default user would be _root_.
 
-This is right for many types of services, but it's not convinient for a Rails container.
-Rails apps are usually run by unprivilaged users, so we should do in our container.
+This is ok in Docker containers for many types of services, but it's not convinient for a Rails one.
+RoR apps are usually run by unprivilaged users, so we should do in our container.
 
 If we don't, many routine operations, like generating migrations, would mess with file permissions on the host machine
 (since we are going to bind the host working directory to the one in the container for development).
-Same goes for other commands like bundle, that is not supposed to be run as root and can lead to problems, both inside and ouside the container.
+Same goes for other commands like bundle, that is not supposed to be run as root. Doing so can lead to problems, both inside and ouside the container (sure happened to me, anyway).
 
-Sure happened to me, by the way.
-I feel much more comfortable running the service as an unprivileged user by default, than having to be careful every time how to interact with the container
-(you sure can "log" in the container as any user, but it's not a solid approach in my opinion).
-Using _Debian_ standard syntax we create a **rails**  user with the default 1000 UID, belonging to a group with the same name and having a home directory. 
+I feel much more comfortable running the service as an unprivileged user by default, than having to care how to interact with the container as a different user everytime
+(you sure can do that but I find it prone to mistakes).
 
-In the same layer, we give the new user ownership of the app directory.
+Using _Debian_ standard syntax we create a _rails_  user with the default 1000 UID, belonging to a group with the same name and having a home directory. 
 ```Dockerfile
 RUN useradd -u 1000 -Um rails && \
+```
+In the same layer, we give the new user ownership of the app directory.
+```Dockerfile
     chown -R rails:rails /app
 ```
 
