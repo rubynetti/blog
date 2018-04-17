@@ -12,7 +12,7 @@ You should avoid creating too many, but it's good for readability and reusabilit
 
 The resulting image will be the "blank" state for our container to be run, so should already hold everything our service will need. It should not be changed too often but, if you keep it tidy and thin, working on it later during the app development won't be a problem.
 
-First thing we need to do is create a file named _Dockerfile_ in the working directory of our application.
+First thing we need to do is creating a file named _Dockerfile_ in the working directory of our application.
 
 This is what we want to end up with
 ```Dockerfile
