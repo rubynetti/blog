@@ -5,7 +5,7 @@ categories: docker rails
 author: Giacomo Bertoldi
 ---
 
-The Dockerfile is a simple text file that set the steps to build the Docker _image_ for our service.
+The Dockerfile is a simple text file that define the steps to build a Docker _image_ for a service.
 
 Every instruction in it constitutes a layer on top of which the subsequent are built.
 You should avoid creating too many, but it's good for readability and reusability that you keep different concepts in different layers.
