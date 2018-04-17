@@ -5,7 +5,7 @@ The Dockerfile is a simple text file that set the steps to build the Docker _ima
 Every instruction in it constitutes a layer on top of which the subsequents are built.
 You should avoid creating too many, but it's good for readability and reusability that you keep different concepts in different layers.
 
-The resulting image will be the "blank" state for our container to be run, so should already contain everything our service will need. It should not be changed too often but, if you keep it tidy and thin, working on it later during the app development won't be a problem.
+The resulting image will be the "blank" state for our container to be run, so should already hold everything our service will need. It should not be changed too often but, if you keep it tidy and thin, working on it later during the app development won't be a problem.
 
 First thing we need to do is create a file named _Dockerfile_ in the working directory of our application.
 
@@ -61,7 +61,7 @@ Notice we don't need to ```sudo```, since _root_ is the default user of most Doc
 
 #### Create the working directory
 
-In the next layer we just create a container directory for the application files.
+In the next layer we just create a directory for the application files.
 ```Dockerfile
 RUN mkdir /app
 ```
@@ -69,7 +69,7 @@ RUN mkdir /app
 
 #### Set the the working directory
 
-Then we set the newly created directory as the default one for the container.
+Then we set the newly created directory as the default one for the image.
 ```Dockerfile
 WORKDIR /app
 ```
