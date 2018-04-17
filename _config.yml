@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Questo sito contiene appunti di team sulle convenzioni adottate, note appunti bla bla.
   Lavoriamo soprattutto per/con venezia86.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#url: "htt" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 external_links: [
@@ -33,7 +33,7 @@ external_links: [
 # Build settings
 markdown: kramdown
 remote_theme: rubynetti/teatro-vecchio
-# theme: teatro-vecchio
+theme: teatro-vecchio
 plugins:
   - jekyll-feed
 
