@@ -47,14 +47,16 @@ FROM ruby:2.5
 
 #### Install Node.js
 
-We need Node.js to run a RoR app so in the next layer we will install it, executing the same commands we would on our machine.
-So we update quietly the sources and install it, along with debian package builders.
+We need Node.js to run a RoR app.
+So in the next layer we install it, executing the same commands we would on any debian machine.
 
-Notice we don't need to ```sudo```, since _root_ is the default user of most Docker images (including Ruby ones).
+We update quietly the sources and install it, along with debian package builders.
 ```Dockerfile
 RUN apt-get update -qq && \
     apt-get install -y build-essential nodejs
 ```
+
+Notice we don't need to ```sudo```, since _root_ is the default user of most Docker images (including Ruby ones).
 
 
 #### Create the working directory
