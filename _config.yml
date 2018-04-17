@@ -32,7 +32,6 @@ external_links: [
 
 # Build settings
 markdown: kramdown
-remote_theme: rubynetti/teatro-vecchio
 theme: teatro-vecchio
 plugins:
   - jekyll-feed
