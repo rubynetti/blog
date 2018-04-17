@@ -38,6 +38,8 @@ plugins:
   - jekyll-feed
 
 google_analytics_account: UA-117679791-1
+google_site_verification: 1ebFRYgoGI0z1_hP62YRIeQ30dvvuY36BxWB3sBlRSc
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
