@@ -117,8 +117,8 @@ USER rails
 
 That's it, there should be a _Dokerfile_ like [_this_](https://github.com/rubynetti/ror-docker-templates/blob/master/basic/Dockerfile) in the root of the application.
 
-To build the image for our container we just need to ```sudo docker build . my-awsome-app```
-(_sudo_ may not be necessary, depending on you OS and user configuration).
+To build the image for our container we just need to ```docker build . my-awsome-app```
+(you may need to _sudo_ Docker commands, depending on your OS and user configuration).
 
 
 #### Running the container
@@ -126,7 +126,7 @@ To build the image for our container we just need to ```sudo docker build . my-a
 You can now run a new container from the image and start an interactive shell inside it like this
 (_--rm_ option makes sure this container will be removed when we close it).
 ```
-$ sudo docker run --rm -it my-awesome-app bash
+$ docker run --rm -it my-awesome-app bash
 ```
 You'll find yourself to a prompt like this
 ```
