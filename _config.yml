@@ -32,11 +32,12 @@ external_links: [
 
 # Build settings
 markdown: kramdown
-# theme: teatro-vecchio
+theme: teatro-vecchio
 remote_theme: rubynetti/teatro-vecchio
 plugins:
   - jekyll-feed
 
+google_analytics_account: UA-117679791-1
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
