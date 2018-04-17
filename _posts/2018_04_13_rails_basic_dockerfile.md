@@ -35,11 +35,10 @@ Every line in it is explained in detail below.
 
 #### Select the base image
 
-First, we should choose an existing image on top of wich we can build it.
-
+First, we should choose an existing image to build on top of.
 Since we want to dockerize a Ruby on Rails up, we can use one of the [Ruby images](ciao) on the Docker Hub.
-_FROM_ let us do that.
 
+_FROM_ let us do that.
 I'm choosing the latest release with ruby 2.5 on Debian.
 ```Dockerfile
 FROM ruby:2.5
