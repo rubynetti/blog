@@ -27,7 +27,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 external_links: [
     ['http://venezia86.it', 'venezia86.it'],
     ['https://simonini.github.io/', 'simonini.github.io'],
-    ['https://github.com/rubynetti/rubynetti.github.io', 'github.com/rubynetti']
+    ['https://github.com/rubynetti/blog', 'github.com/rubynetti/blog']
   ]
 
 # Build settings
