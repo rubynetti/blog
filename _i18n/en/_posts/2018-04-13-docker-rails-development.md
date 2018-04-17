@@ -1,4 +1,4 @@
-({% post_url 2010-09-08-welcome-to-jekyll %}---
+---
 layout: post
 title: Docker Development for Ruby on Rails
 categories: docker rails
