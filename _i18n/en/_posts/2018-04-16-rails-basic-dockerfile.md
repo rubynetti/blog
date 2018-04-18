@@ -130,7 +130,7 @@ $ docker run --rm -it my-awesome-app bash
 ```
 You'll find yourself to a prompt like this
 ```
-root@container_id:/app#
+rails@container_id:/app#
 ```
 
 Not too exciting, huh?
@@ -139,11 +139,11 @@ There's almost nothing in it, just Debian and ruby.
 You can try some commands on the _ruby shell_ to check everything is in place.
 Then just exit the container for now.
 ```
-root@container_id:/app# irb
+rails@container_id:/app# irb
 irb(main):001:0> 2+2==5
 => false
 irb(main):002:0> exit
-root@container_id:/app# exit
+rails@container_id:/app# exit
 ```
 
 In the next section, we are going to explore how to execute a Rails app inside the container.
