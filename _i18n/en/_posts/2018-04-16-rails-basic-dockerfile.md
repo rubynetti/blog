@@ -12,6 +12,9 @@ You should avoid creating too many, but it's good for readability and reusabilit
 
 The resulting image will be the "blank" state for our container to be run, so should already hold everything our service will need. It should not be changed too often but, if you keep it tidy and thin, working on it later during the app development won't be a problem.
 
+I suggest creating a brand new app by ```rails new my-awesome-app``` to follow along with this tutorial.
+You could actually use any existing application, but the db should be **SQLite** cause I'm not going to cover connection with other databases in this post.
+
 First thing we need to do is creating a file named _Dockerfile_ in the working directory of our application.
 
 This is what we want to end up with
@@ -26,7 +29,6 @@ RUN apt-get update -qq && \
     apt-get install -y build-essential nodejs
 
 # set the working dir
-RUN mkdir /app
 WORKDIR /app
 
 # add "rails" default user
@@ -89,7 +91,7 @@ Same goes for other commands like bundle, that is not supposed to be run as root
 I feel much more comfortable running the service as an unprivileged user by default, than having to care how to interact with the container as a different user every time
 (you sure can do that but I find it prone to mistakes).
 
-Using _Debian_ standard syntax we create a _rails_  user with the default 1000 UID, belonging to a group with the same name and having a home directory.
+Using _Debian_ standard syntax we create a _rails_  user with the default 1000 UID (or your user UID if different, you can find out by ```echo $UID```), belonging to a group with the same name and having a home directory.
 ```Dockerfile
 RUN useradd -u 1000 -Um rails && \
 ```
@@ -98,28 +100,35 @@ In the same layer then we give the new user ownership of the app directory.
     chown -R rails:rails /app
 ```
 
+
 #### Set the default user
 
 With the _USER_ command we make rails the default user of the image.
-
-Every remaining command in the _Dockerfile_ will be run as this user,
-as the main process of the service and the commands called from outside the container.
 ```Dockerfile
 USER rails
 ```
+
+Every remaining command in the _Dockerfile_ will be run as this user,
+as the main process of the service and the commands called from outside the container.
+
 
 #### Building the image
 
 That's it, there should be a _Dokerfile_ like [_this_](https://github.com/rubynetti/ror-docker-templates/blob/master/basic/Dockerfile) in the root of the application.
 
-To build the image for our container we just need to ```docker build . my-awsome-app```
-(you may need to _sudo_ Docker commands, depending on your OS and user configuration).
+To build the image for the application we just need to
+```
+docker build path-to-my-awesome-app -t my-awsome-app
+```
+First argument for _docker build_ is the application's path (where the _Dockerfile_ is) and -t option tags the image with a custom name.
+
+**Be aware** you may need to _sudo_ Docker commands, depending on your OS and user configuration.
 
 
 #### Running the container
 
 You can now run a new container from the image and start an interactive shell inside it like this
-(_--rm_ option makes sure this container will be removed when we close it).
+(_--rm_ option makes sure this container will be removed when we close it)
 ```
 $ docker run --rm -it my-awesome-app bash
 ```
@@ -131,7 +140,7 @@ rails@container_id:/app$
 Not too exciting, huh?
 There's almost nothing in it, just Debian and ruby.
 
-You can try some commands on the _ruby shell_ to check everything is in place.
+You can try some commands in the _ruby shell_ to check everything is in place.
 Then just exit the container for now.
 ```
 rails@container_id:/app$ irb
@@ -141,7 +150,7 @@ irb(main):002:0> exit
 rails@container_id:/app$ exit
 ```
 
-In the next section, we are going to explore how to execute a Rails app inside the container.
+In the next section, we are going to explore how to run a Rails app inside the container.
 
 
 <hr/>
