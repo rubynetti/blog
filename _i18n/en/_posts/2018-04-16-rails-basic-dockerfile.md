@@ -64,17 +64,12 @@ RUN apt-get update -qq && \
 Notice we don't need to ```sudo```, since _root_ is the default user of most Docker images (including Ruby ones).
 
 
-#### Create the working directory
-
-In the next layer we just create a directory for the application files.
-```Dockerfile
-RUN mkdir /app
-```
-
-
 #### Set the the working directory
 
-Then we set the newly created directory as the default one for the image.
+In the next layer we set the container's working directory,
+where the application's files live.
+
+WORKDIR will also create the directory since it doesn't exist yet.
 ```Dockerfile
 WORKDIR /app
 ```
