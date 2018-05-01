@@ -1,4 +1,9 @@
-## Running Rails inside a Container
+---
+layout: post
+title: Running Rails inside a Container
+categories: docker rails
+author: Giacomo Bertoldi
+---
 
 In the
 [previous_step]({% post_url 2018-04-16-rails-basic-dockerfile %})
