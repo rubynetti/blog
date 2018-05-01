@@ -148,7 +148,7 @@ To overcome this, _docker-compose_ can be used to set docker configuration in a 
 
 <hr/>
 
-**Previous step:** [Adding the Dockerfile]({% post_url 2018-04-16-rails-basic-dockerfile %})
-
 **Next step:**
 Compose _(coming soon)_
+
+**Previous step:** [Adding the Dockerfile]({% post_url 2018-04-16-rails-basic-dockerfile %})

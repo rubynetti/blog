@@ -155,8 +155,8 @@ In the next section, we are going to explore how to run a Rails app inside the c
 
 <hr/>
 
-**Previous step:**
-[Docker Development for Rails]({% post_url 2018-04-13-docker-rails-development %})
-
 **Next step:**
 [Running Rails Inside a Container]({% post_url 2018-05-01-running-a-ror-container %})
+
+**Previous step:**
+[Docker Development for Rails]({% post_url 2018-04-13-docker-rails-development %})
