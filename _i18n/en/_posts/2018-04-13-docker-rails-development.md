@@ -67,6 +67,7 @@ references were very useful for me. Every command and option is explained clearl
 
 After that, you just have to add a couple of files to your project to configure its containers.
 
+
 <hr/>
 
 **Next step:** [Adding the Dockerfile]({% post_url 2018-04-16-rails-basic-dockerfile %})
