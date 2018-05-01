@@ -1,15 +1,19 @@
 ## Running Rails inside a Container
 
-In the [previous_step](ciaosonounlink) we built the image and run a container ready for a Rails app.
+In the
+[previous_step]({% post_url 2018-04-16-rails-basic-dockerfile %})
+we built the image and run a container ready for a Rails app.
 Now we are going to run the app inside it.
-We won't dive into _[Compose](altrolink)_ yet and use just Docker to do that.
+We won't dive into
+_[Compose](https://docs.docker.com/compose/overview/)_
+yet and use just Docker to do that.
 
 
 #### Binding the working directory
 
 First thing to do is copying the application files inside the container.
 We could do that by using an _ADD_ instruction in the _Dockerfile_,
-but rebuilding the image after any change during development would not be susteinable.
+but rebuilding the image after any change during development would not be sustainable.
 
 So we bind the working directory of the project to the one in the container with the _-v (source:destination)_ option.
 When _source_ is a path it is bound to the _destination_ in the container
@@ -57,7 +61,7 @@ Use Ctrl-C to stop
 ```
 
 **Note**
-To recieve requests from outside the container rails server should not be listening on _localhost_. If that is the case you should bind the server to all interfaces with the option _-b '0.0.0.0'_.
+To receive requests from outside the container rails server should not be listening on _localhost_. If that is the case you should bind the server to all interfaces with the option _-b '0.0.0.0'_.
 I found it is generally better to always specify binding and port for the server, for example
 <br> ``` rails s -b 0.0.0.0 -p 3000```
 
@@ -101,9 +105,9 @@ What's happening here is we need to _bundle_ again, since every time we _docker 
 
 I can feel the pain waiting nokogiri to download, again.
 
-Docker lets sharing files between docker containers with named volumes, using the _-v name:destination_ option. When the first argument is a string instead of a path, _-v_ creates a named volume and mount it in the _destination_ path inside the container.
+Docker lets sharing files between containers using named volumes, by the _-v name:destination_ option. When the first argument is a string instead of a path, _-v_ creates a named volume and mount it in the _destination_ path inside the container.
 
-Named volumes is they are persisted when the container is stopped and even removed by default. So to share the gems between runs of the container we will use a volume for the bundle files.
+Named volumes are persisted by default when the container is stopped and even removed. So to share the gems between runs of the container we will use a volume for the bundle files.
 
 Running _bundle config_ we check the path for the bundle
 ```
@@ -111,15 +115,7 @@ rails@container-id:/app$ bundle config
 Settings are listed in order of priority. The top value will be used.
 path
 Set via BUNDLE_PATH: "/usr/local/bundle"
-
-app_config
-Set via BUNDLE_APP_CONFIG: "/usr/local/bundle"
-
-silence_root_warning
-Set via BUNDLE_SILENCE_ROOT_WARNING: true
-
-bin
-Set via BUNDLE_BIN: "/usr/local/bundle/bin"
+...
 ```
 
 Then we can exit the container, and run it adding the volume (_-v app-bundle:bundle-path_)
