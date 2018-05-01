@@ -68,8 +68,8 @@ I found it is generally better to always specify binding and port for the server
 
 #### Publish the ports
 
-If you open a browser and navigate to localhost:3000 you'll find you can connect to the service.
-That's because right now the container is running totally isolated from the host machine. To connect to the service inside it, we need to publish the port used by the service.
+If you open a browser and navigate to localhost:3000 you'll find you can't connect to the service.
+That's because right now the container is running isolated from the host machine. To connect to the service inside it, we need to publish the port used by it.
 
 The _-p host-port:container-port_ option does that, mapping a port on the container to one on the host machine.
 So we can stop rails server
@@ -87,7 +87,7 @@ exit
 $
 ```
 
-And run again it with the ports option, using rails default port both on the container and the host machine (you can publish whatever port you want instead)
+And run again it with the ports option, using rails default port both on the container and the host machine (you can actually use whatever ports you want, as long as the second one is the rails server one)
 ```
 $ docker run --rm -it -v /path-to-my-awesome-app:/app -p 3000:3000 my-awesome-app bash
 rails@container-id:/app$
@@ -118,7 +118,7 @@ Set via BUNDLE_PATH: "/usr/local/bundle"
 ...
 ```
 
-Then we can exit the container, and run it adding the volume (_-v app-bundle:bundle-path_)
+Then we can exit the container, and run it adding the volume option (_-v app-bundle:bundle-path_)
 ```
 docker run --rm -it -v $PWD:/app -v app-bundle:/usr/local/bundle -p 3000:3000 my-awesome-app bash
 ```
@@ -126,19 +126,19 @@ docker run --rm -it -v $PWD:/app -v app-bundle:/usr/local/bundle -p 3000:3000 my
 
 #### Check it out
 
-We can finally bundle and start rails server.
-We should now be able to connect to the rails server in the container navigating to _localhost:3000_. We can then stop the server and exit the container.
+We can finally bundle and start the rails server.
+We should now be able to connect to the service on _localhost:3000_. We can then stop the server and exit the container.
 
 If we run it again, with the same options as last time, _bundler_ should now use the gems from the volume when possible, completing the bundle in no time.
 
 
 #### A little verbose
 
-We just started adding options running the container, and the command
+We just started adding options and the command
 _```docker run --rm -it -v $PWD:/app -v app-bundle:/usr/local/bundle -p 3000:3000 my-awesome-app bash```_
 is already starting to become long, complicated and difficult to read.
 
-To overcome this, _docker-compose_ can be used to decide docker configuration in a file, instead of in the command.
+To overcome this, _docker-compose_ can be used to set docker configuration in a file, instead of the command.
 
 
 <hr/>
