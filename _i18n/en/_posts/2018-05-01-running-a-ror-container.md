@@ -101,18 +101,18 @@ rails@container-id:/app$
 
 #### Bundle volume
 
-If we try to start the server now, it won't work
+Trying to start the server won't work now
 ```
 rails@container-id:/app$ rails s
 bash: rails: command not found
 ```
-What's happening here is we need to _bundle_ again, since every time we _docker run_ a new container is spawned, that does not share anything with the previous (or future) ones.
+What's happening here is we need to _bundle_ again since every time we _docker run_, a new container is spawned that does not share anything with the previous (or future) ones.
 
-I can feel the pain waiting nokogiri to download, again.
+I can feel the pain waiting for nokogiri to download, again.
 
-Docker lets sharing files between containers using named volumes, by the _-v name:destination_ option. When the first argument is a string instead of a path, _-v_ creates a named volume and mount it in the _destination_ path inside the container.
+Docker lets sharing files between containers using named volumes, with the _-v name:destination_ option. When the first argument is a string instead of a path, _-v_ creates a named volume and mount it in the _destination_ path inside the container.
 
-Named volumes are persisted by default when the container is stopped and even removed. So to share the gems between runs of the container we will use a volume for the bundle files.
+Named volumes are persisted by default when the container is stopped and even removed. This can be used to share bundle files between runs of the container.
 
 Running _bundle config_ we check the path for the bundle
 ```
@@ -132,9 +132,9 @@ docker run --rm -it -v $PWD:/app -v app-bundle:/usr/local/bundle -p 3000:3000 my
 #### Check it out
 
 We can finally bundle and start the rails server.
-We should now be able to connect to the service on _localhost:3000_. We can then stop the server and exit the container.
+Connection to the service should be available on host at _localhost:3000_.
 
-If we run it again, with the same options as last time, _bundler_ should now use the gems from the volume when possible, completing the bundle in no time.
+If we remove and run again the container, with the same options as last time, _bundler_ should now use the gems from the volume when possible, completing the bundle in no time.
 
 
 #### A little verbose

@@ -13,7 +13,7 @@ You should avoid creating too many, but it's good for readability and reusabilit
 The resulting image will be the "blank" state for our container to be run, so should already hold everything our service will need. It should not be changed too often but, if you keep it tidy and thin, working on it later during the app development won't be a problem.
 
 I suggest creating a brand new app by ```rails new my-awesome-app``` to follow along with this tutorial.
-You could actually use any existing application, but the db should be **SQLite** cause I'm not going to cover connection with other databases in this post.
+You could actually use any existing application, but the db should be **SQLite** cause I'm not going to discuss connection with other databases in this post.
 
 First thing we need to do is creating a file named _Dockerfile_ in the working directory of our application.
 
