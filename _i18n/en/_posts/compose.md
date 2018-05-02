@@ -40,17 +40,17 @@ services:
     command: rails s -b 0.0.0.0
     volumes:
       - .:/app
-      - bundle_cache:/usr/local/bundle
+      - app_bundle:/usr/local/bundle
     ports:
       - 3000:3000
 
 volumes:
-  bundle_cache:
+  app_bundle:
 ```
 ```
 $ docker-compose run --rm web bundle
 Creating network "myawesomeapp_default" with the default driver
-Creating volume "myawesomeapp_bundle_cache" with default driver
+Creating volume "app_myawesomeapp_bundle" with default driver
 Fetching gem metadata from https://rubygems.org/.........
 ...
 Bundled gems are installed into `/usr/local/bundle`
@@ -79,13 +79,13 @@ services:
     stop_signal: SIGINT
     volumes:
       - .:/app
-      - bundle_cache:/usr/local/bundle
+      - app_bundle:/usr/local/bundle
     ports:
       - 3000:3000
     restart: on-failure
 
 volumes:
- bundle_cache:
+ app_bundle:
 ```
 ```
 $ docker-compose start
