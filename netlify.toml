@@ -1,7 +1,7 @@
 [Settings]
   ID = "rubynetti"
 
-# A basic redirects rule
+# Redirect for first links
 [[redirects]]
   from = "/docker/rails/2018/05/01/running-a-ror-container.html"
   to = "/running-a-ror-container.html"
