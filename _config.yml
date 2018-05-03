@@ -1,13 +1,3 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
@@ -25,24 +15,9 @@ external_links: [
     ['https://github.com/rubynetti/blog', 'github.com/rubynetti/blog']
   ]
 
-# Build settings
 markdown: kramdown
 theme: teatro-vecchio
-plugins:
-  - jekyll-feed
 
 languages: ['en','it']
 google_analytics_account: UA-117679791-1
 google_site_verification: BEZ89MJ3Dvac4sN7oi-dh8fiz6N4hIuygCnzObGCBA0
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
