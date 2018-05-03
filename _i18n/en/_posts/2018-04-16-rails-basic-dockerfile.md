@@ -92,14 +92,16 @@ I feel much more comfortable running the service as an unprivileged user by defa
 (you sure can do that but I find it prone to mistakes).
 
 Using _Debian_ standard syntax we create a _rails_  user with the default 1000 UID (or your user UID if different, you can find out by ```echo $UID```), belonging to a group with the same name and having a home directory.
+
 ```Dockerfile
 RUN useradd -u 1000 -Um rails && \
 ```
+
 In the same layer then we give the new user ownership of the app directory.
+
 ```Dockerfile
     chown -R rails:rails /app
 ```
-
 
 #### Set the default user
 
@@ -117,9 +119,11 @@ as the main process of the service and the commands called from outside the cont
 That's it, there should be a _Dokerfile_ like [_this_](https://github.com/rubynetti/ror-docker-templates/blob/master/basic/Dockerfile) in the root of the application.
 
 To build the image for the application we just need to
-```
+
+```bash
 docker build path-to-my-awesome-app -t my-awsome-app
 ```
+
 First argument for _docker build_ is the application's path (where the _Dockerfile_ is) and -t option tags the image with a custom name.
 
 **Be aware** you may need to _sudo_ Docker commands, depending on your OS and user configuration.
@@ -129,11 +133,14 @@ First argument for _docker build_ is the application's path (where the _Dockerfi
 
 You can now run a new container from the image and start an interactive shell inside it like this
 (_--rm_ option makes sure this container will be removed when we close it)
-```
+
+```bash
 $ docker run --rm -it my-awesome-app bash
 ```
+
 You'll find yourself to a prompt like this
-```
+
+```bash
 rails@container_id:/app$
 ```
 
@@ -142,7 +149,8 @@ There's almost nothing in it, just Debian and ruby.
 
 You can try some commands in the _ruby shell_ to check everything is in place.
 Then just exit the container for now.
-```
+
+```bash
 rails@container_id:/app$ irb
 irb(main):001:0> 2+2==5
 => false
