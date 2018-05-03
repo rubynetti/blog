@@ -3,6 +3,17 @@
 
 # A basic redirects rule
 [[redirects]]
-  from = "/old-path"
-  to = "/"
+  from = "/docker/rails/2018/05/01/running-a-ror-container.html"
+  to = "/running-a-ror-container.html"
 
+[[redirects]]
+  from = "/docker/rails/2018/04/16/rails-basic-dockerfile.html"
+  to = "/rails-basic-dockerfile.html"
+
+[[redirects]]
+  from = "/docker/rails/2018/04/13/docker-rails-development.html"
+  to = "/docker-rails-development.html"
+
+[[redirects]]
+  from = "/it/javascript/2018/04/17/vue-events.html"
+  to = "/it/vue-events.html"

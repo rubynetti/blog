@@ -8,6 +8,7 @@ title: Rubynetti Blog
 baseurl: "" # the subpath of your site, e.g. /blog
 #url: "htt" # the base hostname & protocol for your site, e.g. http://example.com
 
+permalink: /:title/
 
 external_links: [
     ['http://venezia86.it', 'venezia86.it'],
