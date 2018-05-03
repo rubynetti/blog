@@ -1,0 +1,5 @@
+---
+layout: null
+---
+User-agent: *
+Sitemap: https://{{ site.baseurl_root }}/sitemap_index.xml
