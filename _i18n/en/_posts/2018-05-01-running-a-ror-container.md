@@ -67,8 +67,7 @@ Use Ctrl-C to stop
 
 **Note**
 To receive requests from outside the container rails server should not be listening on _localhost_. If that is the case you should bind the server to all interfaces with the option _-b '0.0.0.0'_.
-I found it is generally better to always specify binding and port for the server, for example
-<br> ``` rails s -b 0.0.0.0 -p 3000```
+I found it is generally better to always specify binding and port for the server, for example ``` rails s -b 0.0.0.0 -p 3000```
 
 
 #### Publish the ports
