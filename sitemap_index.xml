@@ -8,6 +8,6 @@ layout: null
         <loc>{{site.url}}/sitemap.xml</loc>
     </sitemap>
     <sitemap>
-        <loc>{{site.url}}/en/sitemap.xml</loc>
+        <loc>{{site.url}}/it/sitemap.xml</loc>
     </sitemap>
 </sitemapindex>
