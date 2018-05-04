@@ -140,7 +140,7 @@ If we remove and run again the container, with the same options as last time, _b
 
 We just started adding options and the command
 _```docker run --rm -it -v $PWD:/app -v app-bundle:/usr/local/bundle -p 3000:3000 my-awesome-app bash```_
-is already starting to become long, complicated and difficult to read.
+is already starting to become long, clumsy and difficult to read.
 
 To overcome this, _docker-compose_ can be used to set docker configuration in a file, instead of the command.
 
