@@ -1,6 +1,7 @@
 GIT
   remote: https://github.com/rubynetti/teatro-vecchio
-  revision: e5f3160d1565a4dd70f4958fa828c1077bcebab0
+  revision: 9b248c6e199ac9270ebe7a607d7d9d9491c9b8c2
+  branch: master
   specs:
     teatro-vecchio (0.2.7)
       jekyll (~> 3.7)
