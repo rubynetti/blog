@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: .
+      args:
+        - uid=$UID:-1000
+    command: jekyll serve -H 0.0.0.0
+    stop_signal: SIGINT
+    volumes:
+      - .:/app
+      - app_bundle:/usr/local/bundle
+    ports:
+      - 4000:4000
+    restart: on-failure
+
+volumes:
+  app_bundle:
