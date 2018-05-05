@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rubynetti/teatro-vecchio
-  revision: 9b248c6e199ac9270ebe7a607d7d9d9491c9b8c2
+  revision: 9b30d820daed8b62fb49154d1de578ea03e04eac
   branch: master
   specs:
     teatro-vecchio (0.2.7)
@@ -57,10 +57,6 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
     mercenary (0.3.6)
-    minima (2.4.1)
-      jekyll (~> 3.5)
-      jekyll-feed (~> 0.9)
-      jekyll-seo-tag (~> 2.1)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
     public_suffix (3.0.2)
@@ -82,7 +78,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.7.3)
   jekyll-feed (~> 0.6)
-  minima (~> 2.0)
   teatro-vecchio!
   tzinfo-data
 
