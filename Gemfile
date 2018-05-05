@@ -21,6 +21,9 @@ gem 'teatro-vecchio', :git => 'https://github.com/rubynetti/teatro-vecchio' #'~>
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
+  gem 'jekyll-multiple-languages-plugin', path: './../jekyll-multiple-languages-plugin'
+  gem 'jekyll-seo-tag', '~> 2.4'
+  gem 'jekyll-sitemap'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
