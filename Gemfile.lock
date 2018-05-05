@@ -1,13 +1,16 @@
 GIT
-  remote: https://github.com/rubynetti/teatro-vecchio
-  revision: 9b30d820daed8b62fb49154d1de578ea03e04eac
-  branch: master
+  remote: https://github.com/rubynetti/jekyll-multiple-languages-plugin
+  revision: 11fe8f194137809947b43e3691f840ccc51ce6a5
   specs:
-    teatro-vecchio (0.2.7)
+    jekyll-multiple-languages-plugin (1.5.3)
+      jekyll (>= 2.0, < 4.0)
+
+GIT
+  remote: https://github.com/rubynetti/teatro-vecchio
+  revision: 813b0fe0af9b3edc46e763f5cb87a72526125ad9
+  specs:
+    teatro-vecchio (0.2.9)
       jekyll (~> 3.7)
-      jekyll-multiple-languages-plugin
-      jekyll-seo-tag (~> 2.4)
-      jekyll-sitemap
 
 GEM
   remote: https://rubygems.org/
@@ -19,7 +22,7 @@ GEM
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
-    eventmachine (1.2.5)
+    eventmachine (1.2.6)
     ffi (1.9.23)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
@@ -40,8 +43,6 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-feed (0.9.3)
       jekyll (~> 3.3)
-    jekyll-multiple-languages-plugin (1.5.1)
-      jekyll (>= 2.0, < 4.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-seo-tag (2.4.0)
@@ -78,6 +79,9 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.7.3)
   jekyll-feed (~> 0.6)
+  jekyll-multiple-languages-plugin!
+  jekyll-seo-tag (~> 2.4)
+  jekyll-sitemap
   teatro-vecchio!
   tzinfo-data
 
