@@ -1,15 +1,13 @@
 GIT
   remote: https://github.com/rubynetti/jekyll-multiple-languages-plugin
   revision: 11fe8f194137809947b43e3691f840ccc51ce6a5
-  branch: master
   specs:
     jekyll-multiple-languages-plugin (1.5.3)
       jekyll (>= 2.0, < 4.0)
 
 GIT
   remote: https://github.com/rubynetti/teatro-vecchio
-  revision: 166f5751262501115d241dc9b8e015c9ac04d73c
-  branch: master
+  revision: 3ecfb2914f80d30a92923b4921a9b949dbc5933c
   specs:
     teatro-vecchio (0.2.9)
       jekyll (~> 3.7)
