@@ -15,6 +15,9 @@ google_analytics_account: UA-117679791-1
 google_site_verification: BEZ89MJ3Dvac4sN7oi-dh8fiz6N4hIuygCnzObGCBA0
 url: "https://rubynetti.netlify.com"
 
+header_pages:
+  - conventions.md
+
 exclude:
   - Gemfile
   - Gemfile.lock
