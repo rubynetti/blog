@@ -14,3 +14,23 @@ languages: ['en','it']
 google_analytics_account: UA-117679791-1
 google_site_verification: BEZ89MJ3Dvac4sN7oi-dh8fiz6N4hIuygCnzObGCBA0
 url: "https://rubynetti.netlify.com"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - "*.gem"
+  - "*.gemspec"
+  - LICENSE.txt
+  - README.md
+  - Dockerfile
+  - convenzioni.md
+  - netlify.toml
+
+exclude_from_localizations:
+  - javascript
+  - images
+  - css
+  - robots.txt
+  - sitemap.xml
+  - sitemap_index.xml
+  - manifest.json
