@@ -5,7 +5,7 @@ date:   2018-04-17 17:02:22 +0200
 categories: javascript
 ---
 
-# Approcci con Vue.js
+# Approcci con Vue.js - test
 
 Nella board di momento.cc ho bisogno di aggiungere elementi.
 Tra i problemi che ho incontrato:
