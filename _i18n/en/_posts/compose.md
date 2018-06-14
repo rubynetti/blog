@@ -5,9 +5,32 @@ categories: docker rails
 author: Giacomo Bertoldi
 ---
 
+Intro
+[YAML](http://yaml.org/)
+
+
+#### Compose file
+
+_Compose_ works by parsing the directions in a _docker-compose.yml_ file.
+As with the _Dockerfile_, the usual place to create it
+is the root of the application to conteinerize.
+
+##### Version
+
+First line version of the _Compose file format_
+we intend to use.
+All directives in this example are intended to work with version _3_.
 ```YAML
 version: '3'
 ```
+
+
+#### Build
+
+Every key inside the **services** one will spawn a different container,
+composing our application.
+In this case we just need a **web** service.
+
 ```YAML
 version: '3'
 
@@ -15,6 +38,7 @@ services:
   web:
     build: .
 ```
+
 ```
 $ docker-compose build
 Building web
@@ -31,6 +55,36 @@ Step 5/5 : USER rails
 Successfully built {image-id}
 Successfully tagged myawesomeapp_web:latest
 ```
+
+
+#### Run
+
+```YAML
+version: '3'
+
+services:
+  web:
+    build: .
+    volumes:
+      - .:/app
+      - app_bundle:/usr/local/bundle
+
+volumes:
+  app_bundle:
+```
+
+```
+$ docker-compose run --rm web bundle
+Creating network "myawesomeapp_default" with the default driver
+Creating volume "app_myawesomeapp_bundle" with default driver
+Fetching gem metadata from https://rubygems.org/.........
+...
+Bundled gems are installed into `/usr/local/bundle`
+```
+
+
+##### Up
+
 ```YAML
 version: '3'
 
@@ -47,14 +101,7 @@ services:
 volumes:
   app_bundle:
 ```
-```
-$ docker-compose run --rm web bundle
-Creating network "myawesomeapp_default" with the default driver
-Creating volume "app_myawesomeapp_bundle" with default driver
-Fetching gem metadata from https://rubygems.org/.........
-...
-Bundled gems are installed into `/usr/local/bundle`
-```
+
 ```
 $ docker-compose up
 Creating myawesomeapp_web_1 ... done
@@ -69,6 +116,10 @@ web_1  | * Environment: development
 web_1  | * Listening on tcp://0.0.0.0:3000
 web_1  | Use Ctrl-C to stop
 ```
+
+
+#### Final touches
+
 ```YAML
 version: '3'
 
@@ -87,6 +138,7 @@ services:
 volumes:
  app_bundle:
 ```
+
 ```
 $ docker-compose start
 Starting web ... done
@@ -106,3 +158,4 @@ rails@container-id:/app$ rails db:migrate
    -> 0.0024s
 == 20180502151325 CreateUsers: migrated (0.0026s) =============================
 ```
+restart stop down down -v
