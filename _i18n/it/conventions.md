@@ -1,21 +1,15 @@
----
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: page
-title: Convenzioni per progetti Ruby On Rails
----
-
 ## Introduzione
 
 Queste sono alcune delle convenzioni e delle decisioni che abbiamo preso come squadra di lavoro per quanto riguarda le applicazioni che scriviamo con il framework **Ruby On Rails**.  
-Chi conosce il framework ci vedrà una discreta soggettività e probabilmente anche molte lacune.
+Chi conosce il framework ci vedrà una discreta soggettività e probabilmente anche molte lacune.  
 Non abbiamo l'ambizione di credere che nessuna di queste decisioni siano _scolpite nella roccia_. Anzi.
-Ciò che è stato scritto (e verrà scritto) è frutto di situazioni che hanno a che fare con reali progetti di lavoro e reali commissioni ma sono decisioni liquide che funzionano soprattutto da **bussola** per **evitare di ridiscutere ogni volta le nostre decisioni**.  
+Ciò che è stato scritto (e verrà scritto) è frutto di situazioni che hanno a che fare con reali progetti di lavoro e commissioni.  
+Sono **decisioni liquide** che funzionano soprattutto da **bussola** per **evitare di ridiscutere ogni volta le nostre decisioni**.  
 Allo stesso tempo se emergeranno tecniche o soluzioni migliori cambieremo quanto scritto senza porci particolari problemi.  
 In ogni caso quelle scritte di seguito sono decisioni che trovano applicazione pratica nel mondo reale lavorativo.  
 Non sono frutto di particolare speculazioni teoriche approfondite ne seguono una scuola di pensiero in particolare.  
-Trattasi di un _melting pot_ di esperienza personale, materiale preso da internet, libri etc.
+Trattasi di un _melting pot_ di esperienza personale, materiale preso da internet, libri etc.  
+Sicuramente ha influito molto la scuola del TDD e del pensiero Agile.  
 In ogni caso questo è inteso come l'inizio di un percorso di decisioni che progressivamente vorremo migliorare e riempire di ulteriori contenuti.
 
 ## Backend
