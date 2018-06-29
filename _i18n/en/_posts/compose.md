@@ -1,35 +1,47 @@
 ---
 layout: post
-title: Rails Compose blablavladndfskfkjd
+title: Containerize a Rails app with Docker Compose
 categories: docker rails
 author: Giacomo Bertoldi
 ---
 
-Intro
-[YAML](http://yaml.org/)
+[Compose](https://docs.docker.com/compose/install/#install-compose)
+is a tool designed to configure and run multiple containers.
 
 
-#### Compose file
 
-_Compose_ works by parsing the directions in a _docker-compose.yml_ file.
+#### Docker Compose
+
+_Compose_ works by parsing directions in a _docker-compose.yml_ file.
 As with the _Dockerfile_, the usual place to create it
 is the root of the application to conteinerize.
 
 ##### Version
 
-First line version of the _Compose file format_
-we intend to use.
+First line  which version of the _Compose file format_
+is us.
 All directives in this example are intended to work with version _3_.
 ```YAML
 version: '3'
 ```
 
 
-#### Build
+#### Services
 
 Every key inside the **services** one will spawn a different container,
 composing our application.
 In this case we just need a **web** service.
+```YAML
+version: '3'
+
+services:
+  web:
+```
+
+
+#### Build
+The **build** key tells _Compose_ where to find the _Dockerfile_,
+```.``` loads it from the current directory
 
 ```YAML
 version: '3'
@@ -39,6 +51,7 @@ services:
     build: .
 ```
 
+We can now ```docker-compose build``` to create the image.
 ```
 $ docker-compose build
 Building web
@@ -55,9 +68,12 @@ Step 5/5 : USER rails
 Successfully built {image-id}
 Successfully tagged myawesomeapp_web:latest
 ```
+Notice the image is conviniently named using the app directory name followed by the name of the service.
 
 
-#### Run
+#### Bundle
+
+Before starting the rails app we should bundle, we can do that inside a temporary container
 
 ```YAML
 version: '3'
@@ -72,6 +88,8 @@ services:
 volumes:
   app_bundle:
 ```
+
+To bundle inside a temporary container
 
 ```
 $ docker-compose run --rm web bundle
