@@ -3,7 +3,7 @@ permalink: /:title/
 baseurl: ""
 external_links: [
     ['http://venezia86.it', 'venezia86.it'],
-    ['https://simonini.github.io/', 'simonini.github.io'],
+    ['https://simonini.netlify.com/', 'simonini.netlify.com'],
     ['https://github.com/rubynetti/blog', 'github.com/rubynetti/blog']
   ]
 
@@ -34,6 +34,5 @@ exclude_from_localizations:
   - images
   - css
   - robots.txt
-  - sitemap.xml
   - sitemap_index.xml
   - manifest.json
