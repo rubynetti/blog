@@ -3,6 +3,7 @@ layout: post
 title:  Introduzione all'uso di Tmux
 date:   2018-08-02 17:02:22 +0200
 categories: tmux
+toc: true
 ---
 
 # Tmux, introduzione all'uso
@@ -41,7 +42,8 @@ Puoi cambiare una sessione di tmux schiacciando **control + b** e poi *s*.
 Puoi cancellare il buffer come con iterm attraverso l'uso di una scorciatoia da impostare all'interno del file di configurazione di tmux.
 
     bind -n C-k send-keys -R \; send-keys C-l \; clear-history
-    # Fonte: http://notes.jerzygangi.com/the-only-way-that-actually-works-to-clear-the-screen-in-tmux/
+
+Fonte: [notes.jerzygangi.com](http://notes.jerzygangi.com/the-only-way-that-actually-works-to-clear-the-screen-in-tmux/)
 
 ## Come posso contare il numero di parole in vi?
 
