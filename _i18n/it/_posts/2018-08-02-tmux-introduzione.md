@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Introduzione all'uso di tmux
-date:   2018-08-22 17:02:22 +0200
+title:  Introduzione all'uso di Tmux
+date:   2018-08-02 17:02:22 +0200
 categories: tmux
 ---
 
