@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Introduzione all'uso di Tmux
+title:  Introduzione all'uso di tmux
 date:   2018-08-02 17:02:22 +0200
 categories: tmux
 toc: true
@@ -8,7 +8,7 @@ toc: true
 
 # Tmux, introduzione all'uso
 
-## Introduzione all'uso di Tmux
+## Introduzione all'uso di tmux
 
 Questo sono i miei appunti per imparare ad usare **tmux**.
 
@@ -21,7 +21,7 @@ Questo sono i miei appunti per imparare ad usare **tmux**.
 
 Per poter personalizzare *tmux* è necessario modificare il file tmux.conf che si trova all'interno della cartella principale dell'utente (_home folder_).
 
-## Come posso copiare e incollare con Tmux?
+## Come posso copiare e incollare con tmux?
 
 Per poter compiare e incollare con tmux bisogna usare la seguente lista di operazioni:
 
