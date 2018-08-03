@@ -38,6 +38,8 @@ sudo sysctl -w vm.max_map_count=262144
 
 # Impostazioni per Rails
 
+Dopo aver installato normalmente la gemma _searchkick_ bisogna configurare i model.
+
 ## Configurazioni del model.
 
 Per impostare correttamente l'uso di Elasticsearch con Rails è sufficiente inserire nel __model__ su cui si vuole fare ricerca il seguente codice:
@@ -49,6 +51,16 @@ searchkick(language: 'italian', callbacks: :async)
 Il primo parametro (_language_) indica la lingua che si vuole usare. Il valore predefinito è l'inglese.
 Il secondo parametro (_callbacks_) indica la strategia che si vuole utilizzare per l'aggiornamento dei dati all'interno di **Elasticsearch** tramite **Rails**.
 Il valore predefinito prevede una sincronia immediata tramite Rails che potrebbe rallentare l'esperienza dell'utente finale. Se si può impostare _async_ è sicuramente meglio perché potremmo evitare di far pesare la sincronizzazione dei dati all'utente.
+
+## Indicizzazione degli elementi
+
+Per poter effettuare le ricerche sul model bisogna indicizzarlo.
+Per poterlo fare è sufficiente usare il metodo _reindex_.
+Ad esempio, una volta entrato nella console di *Rails* è sufficiente scrivere:
+
+```ruby
+Book.reindex
+```
 
 ## Come posso cercare anche sui model associati?
 
