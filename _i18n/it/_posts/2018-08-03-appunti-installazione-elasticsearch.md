@@ -26,3 +26,8 @@ Impostare il proprio docker-compose.yml in questo modo:
 Per poter installare **Elasticsearch** tramite *docker-compose* bisogna impostare il [max_map_count](https://www.kernel.org/doc/Documentation/sysctl/vm.txt) in modo adeguato alle sue esigenze, portando il valore da 65530 a 262144.
 
     sudo sysctl -w vm.max_map_count=262144
+
+
+## Fonti
+  - [Stackoverflow](https://stackoverflow.com/questions/11683850/how-much-memory-could-vm-use)
+  - [Guide from elastic.co](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html)
