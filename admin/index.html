@@ -15,7 +15,7 @@
 
   <script>
 CMS.registerPreviewStyle('https://unpkg.com/netlify-cms-yoast-seo@~1.0/dist/main.css');
-CMS.registerPreviewTemplate('post_en', createClass({
+var yeo_class = createClass({
     render: function () {
         const entry = this.props.entry
         const title = entry.getIn(['data', 'title']) || ''
@@ -31,7 +31,8 @@ CMS.registerPreviewTemplate('post_en', createClass({
             YOAST.getScoresAsHTML(h)
         );
     }
-}));
+})
+CMS.registerPreviewTemplate('post_en', yeo_class);
 </script>
 </body>
 </html>

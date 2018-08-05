@@ -4,7 +4,7 @@ backend:
   site_domain: rubynetti.it
 media_folder: "images/uploads"
 collections:
-  - name: "post it" # Used in routes, e.g. /admin/collections/blog
+  - name: "post_it" # Used in routes, e.g. /admin/collections/blog
     label: "Post it" # Used in the UI
     folder: "_i18n/it/_posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
@@ -13,7 +13,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "post en" # Used in routes, e.g. /admin/collections/blog
+  - name: "post_en" # Used in routes, e.g. /admin/collections/blog
     label: "Post en" # Used in the UI
     folder: "_i18n/en/_posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
