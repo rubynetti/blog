@@ -15,7 +15,7 @@
 
   <script>
 CMS.registerPreviewStyle('https://unpkg.com/netlify-cms-yoast-seo@~1.0/dist/main.css');
-var yeo_class = createClass({
+var yeo_class_en = createClass({
     render: function () {
         const entry = this.props.entry
         const title = entry.getIn(['data', 'title']) || ''
@@ -32,8 +32,27 @@ var yeo_class = createClass({
         );
     }
 })
-CMS.registerPreviewTemplate('post_en', yeo_class);
-CMS.registerPreviewTemplate('post_it', yeo_class);
+
+var yeo_class_it = createClass({
+    render: function () {
+        const entry = this.props.entry
+        const title = entry.getIn(['data', 'title']) || ''
+        YOAST.setContent({
+            title: title,
+            description: entry.getIn(['data', 'description']) || '',
+            keyword: entry.getIn(['data', 'yoast_keyword']) || '',
+            text: entry.getIn(['data', 'body']) || '',
+            locale: "it_IT",
+            titleWidth: title.split('').length * 5 // 5px is an average width of each character ;)
+        })
+        return h('div', {},
+            this.props.widgetFor('body'),
+            YOAST.getScoresAsHTML(h)
+        );
+    }
+})
+CMS.registerPreviewTemplate('post_en', yeo_class_en);
+CMS.registerPreviewTemplate('post_it', yeo_class_it);
 </script>
 </body>
 </html>
