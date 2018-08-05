@@ -45,7 +45,7 @@ A posteriori la soluzione è _ovvia_ e _leggibile_.
 
 Con questa soluzione l'utente, quando seleziona una delle voci all'interno del **menu a tendina**, cambia i valori _data_ dal componente Vue.
 
-## La necessità di creare una copia di un oggetto in javascript
+## 4. La necessità di creare una copia di un oggetto in javascript
 
 Quando veniva aggiunto una voce alla lista, la voce rimaneva ancorata al form.
 Per slegare le due fasi ho dovuto inserire il seguente codice:
