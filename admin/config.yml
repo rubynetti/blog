@@ -16,6 +16,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Focus Keyword", name: "yoast_keyword", widget: "string" }
       - { label: "Meta Description", name: "description", widget: "string" }
+      - { label: "Categories", name: "categories", widget: "string" }
 
   - name: "post_en" # Used in routes, e.g. /admin/collections/blog
     label: "Post en" # Used in the UI
@@ -29,3 +30,5 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Focus Keyword", name: "yoast_keyword", widget: "string" }
       - { label: "Meta Description", name: "description", widget: "string" }
+      - { label: "Categories", name: "categories", widget: "string" }
+      
