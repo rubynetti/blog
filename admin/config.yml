@@ -1,8 +1,6 @@
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
   repo: rubynetti/blog
-  branch: master
   site_domain: rubynetti.netlify.com
 media_folder: "images/uploads"
 collections:
