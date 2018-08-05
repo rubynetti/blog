@@ -1,0 +1,26 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+  repo: rubynetti/blog
+  branch: master
+  site_domain: rubynetti.netlify.com
+media_folder: "images/uploads"
+collections:
+  - name: "post it" # Used in routes, e.g. /admin/collections/blog
+    label: "Post it" # Used in the UI
+    folder: "_i18n/it" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "post en" # Used in routes, e.g. /admin/collections/blog
+    label: "Post en" # Used in the UI
+    folder: "_i18n/en" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
