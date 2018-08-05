@@ -8,6 +8,8 @@ yoast_keyword: vue
 description: >-
   Appunti su vue.js in una interazione col mio progetto di Rails. L'elenco dei
   problemi che ho incontrato con questa nuova libreria javascript.
+categories: 'javascript, vue'
+toc: false
 ---
 # Approcci con Vue.js
 
