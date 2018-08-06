@@ -13,14 +13,12 @@ toc: false
 ---
 ![Minitest with Rails - list of title books](/images/uploads/annie-spratt-303944-unsplash.jpg)
 
-I need to test often about _title tag_ for SEO reason. The title tag is very important for Google and search motors for obvious reasons: it is the title of the page and the first thing that user see when choosing a result from the search. How to test with **minitest** inside *Rails*?
+I need to test often about _title tag_ for SEO reason. The title tag is very important for Google and search motors for obvious reasons: is the title of the page and the first thing that user see when he have to choose a result from the search. How to test with **minitest** inside _Rails_?
 
-I use the meta-tag gem and sometimes I write errors often so I choose to put this part under version control for a project like significatocanzone.it where SEO is a very important topic.
+I use the meta-tag gem and sometimes I do errors so I choose to put this part under version control for a project like [significatocanzone.it](https://significatocanzone.it) where SEO is a very important topic.
 
-Rails way is not very preoccupied with testing views issue. There are only one chapter and very small about it. But I'm lucky because the first example is exactly about my concern.
+Rails guides is not very preoccupied with testing views issue. There are only one chapter and very small about it. But I'm lucky because the first example is exactly about my concern.
 
-Minitest: how to test tag title in a Rails Project? The simplest way is to assert select.
-
-Minitest for test tag title. How to do it? It's very easy with assert_select. I use meta tag gem with Rails and I do often error so I need it.
+The solutions is use assert_select in this way:
 
 ![Assert select rails minitest](/images/uploads/assert-select-rails.png)
