@@ -1,8 +1,8 @@
 ---
 layout: post
 title: >-
-  Minitest: how to test tag title in a Rails Project? The simply way is assert
-  select.
+  Minitest: how to test tag title in a Rails Project? The simplest way is using
+  assert_select method.
 date: 2018-08-06T06:12:32.159Z
 yoast_keyword: minitest
 description: >-
