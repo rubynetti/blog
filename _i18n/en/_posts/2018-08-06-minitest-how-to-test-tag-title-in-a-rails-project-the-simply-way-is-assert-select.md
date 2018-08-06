@@ -11,8 +11,6 @@ description: >-
 categories: 'rails, test'
 toc: false
 ---
-![Minitest with Rails - list of title books](/images/uploads/annie-spratt-303944-unsplash.jpg)
-
 I need to test often about _title tag_ for SEO reason. The title tag is very important for Google and search motors for obvious reasons: is the title of the page and the first thing that user see when he have to choose a result from the search. How to test with **minitest** inside _Rails_?
 
 I use the meta-tag gem and sometimes I do errors so I choose to put this part under version control for a project like [significatocanzone.it](https://significatocanzone.it) where SEO is a very important topic.
