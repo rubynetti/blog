@@ -15,8 +15,6 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Focus Keyword", name: "yoast_keyword", widget: "string" }
       - { label: "Meta Description", name: "description", widget: "string" }
-      - { label: "Categories", name: "categories", widget: "string" }
-      - { label: "Toc", name: "toc", widget: "boolean" }
 
   - name: "post_it" # Used in routes, e.g. /admin/collections/blog
     label: "Post it" # Used in the UI
