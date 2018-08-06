@@ -1,6 +1,11 @@
 global:
-  description: >- # this means to ignore newlines until "baseurl:"
+  articles_related: Correlati
+  contacts: Contatti
+  description: >-
     Scriviamo del codice Ruby (soprattutto On Rails) straordinariamente simpatico.
     Ci potete trovare in quel di Venezia e Mestre.
     Questo sito contiene appunti di team sulle convenzioni adottate, note appunti bla bla.
     Lavoriamo soprattutto per/con venezia86.
+titles:
+  about: Chi siamo?
+  conventions: Convenzioni
