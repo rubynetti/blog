@@ -15,7 +15,6 @@ toc: true
 
 Per usare elasticsearch impostare il proprio docker-compose.yml in questo modo:
 
-<<<<<<< HEAD
 ```yaml
 elasticsearch:
   image: docker.elastic.co/elasticsearch/elasticsearch:6.3.2
@@ -28,26 +27,20 @@ volumes:
   esdata1:
     driver: local
 ```
-=======
+
 <script src="https://gist.github.com/simonini/9a5c9d3ec040ce2d412562333792324c.js"></script>
->>>>>>> d1149abf4539bf665bb3692e6ed3952c3aedfbe4
 
 ## Impostare la _virtual memory_ del _kernel_ di Linux a 262144
 
 Per poter installare **Elasticsearch** tramite **docker compose** bisogna impostare il [max_map_count](https://www.kernel.org/doc/Documentation/sysctl/vm.txt) in modo adeguato alle sue esigenze, portando il valore da 65530 a 262144.
 Per poterlo fare è necessario eseguire nel terminale della macchina il seguente comando:
 
-<<<<<<< HEAD
 ```bash
 sudo sysctl -w vm.max_map_count=262144
 ```
 
 **Attenzione**: è importante notare che il comando va eseguito **nella macchina che ospita i container** e non all'interno del container di elasticsearch.
-=======
-```
-sudo sysctl -w vm.max_map_count=262144
-```
->>>>>>> d1149abf4539bf665bb3692e6ed3952c3aedfbe4
+
 
 # Impostazioni per Rails
 
