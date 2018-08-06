@@ -1,17 +1,21 @@
 ---
 layout: post
-title:  Elasticsearch, Docker e Rails, installazione e primi passi.
-date:   2018-08-02 17:02:22 +0200
+title: 'Elasticsearch, Docker e Rails, installazione e primi passi.'
+date: '2018-08-02 17:02:22 +0200'
+yoast_keyword: elasticsearch
+description: >-
+  Come usare elasticsearch con Rails e docker? Ecco degli appunti presi durante
+  lo sviluppo di una applicazione reale.
 categories: docker elasticsearch rails
 toc: true
 ---
-
 # Installazione di Elasticsearch
 
-## Come installare elasticsearch con Docker?
+## Come installarlo con Docker?
 
-Impostare il proprio docker-compose.yml in questo modo:
+Per usare elasticsearch impostare il proprio docker-compose.yml in questo modo:
 
+<<<<<<< HEAD
 ```yaml
 elasticsearch:
   image: docker.elastic.co/elasticsearch/elasticsearch:6.3.2
@@ -24,17 +28,26 @@ volumes:
   esdata1:
     driver: local
 ```
+=======
+<script src="https://gist.github.com/simonini/9a5c9d3ec040ce2d412562333792324c.js"></script>
+>>>>>>> d1149abf4539bf665bb3692e6ed3952c3aedfbe4
 
-## Impostare la *virtual memory* del *kernel* di Linux a 262144
+## Impostare la _virtual memory_ del _kernel_ di Linux a 262144
 
 Per poter installare **Elasticsearch** tramite **docker compose** bisogna impostare il [max_map_count](https://www.kernel.org/doc/Documentation/sysctl/vm.txt) in modo adeguato alle sue esigenze, portando il valore da 65530 a 262144.
 Per poterlo fare è necessario eseguire nel terminale della macchina il seguente comando:
 
+<<<<<<< HEAD
 ```bash
 sudo sysctl -w vm.max_map_count=262144
 ```
 
 **Attenzione**: è importante notare che il comando va eseguito **nella macchina che ospita i container** e non all'interno del container di elasticsearch.
+=======
+```
+sudo sysctl -w vm.max_map_count=262144
+```
+>>>>>>> d1149abf4539bf665bb3692e6ed3952c3aedfbe4
 
 # Impostazioni per Rails
 
@@ -42,15 +55,20 @@ Dopo aver installato normalmente la gemma _searchkick_ bisogna configurare i mod
 
 ## Configurazioni del model.
 
-Per impostare correttamente l'uso di Elasticsearch con Rails è sufficiente inserire nel __model__ su cui si vuole fare ricerca il seguente codice:
+Per impostarne correttamente l'uso con Rails è sufficiente inserire nel **model** su cui si vuole fare ricerca il seguente codice:
 
 ```ruby
 searchkick(language: 'italian', callbacks: :async)
 ```
 
-Il primo parametro (_language_) indica la lingua che si vuole usare. Il valore predefinito è l'inglese.
-Il secondo parametro (_callbacks_) indica la strategia che si vuole utilizzare per l'aggiornamento dei dati all'interno di **Elasticsearch** tramite **Rails**.
-Il valore predefinito prevede una sincronia immediata tramite Rails che potrebbe rallentare l'esperienza dell'utente finale. Se si può impostare _async_ è sicuramente meglio perché potremmo evitare di far pesare la sincronizzazione dei dati all'utente.
+Il primo parametro (_language_) indica la lingua che si vuole usare.
+Il valore predefinito è l'inglese.
+Se stai leggendo questo articolo probabilmente sei interessato a impostare il settaggio in italiano.
+
+Il secondo parametro (_callbacks_) indica la strategia che si vuole utilizzare per l'aggiornamento dei dati.
+Il valore predefinito prevede una sincronia immediata tramite Rails.
+L'impostazione predefinita potrebbe quindi rallentare l'esperienza dell'utente finale.
+In sintesi, quando è possibile, è meglio impostare _async_.
 
 ## Indicizzazione degli elementi
 

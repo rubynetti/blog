@@ -1,3 +1,7 @@
+---
+title: 'Le convenzioni che usiamo con Ruby On Rails'
+---
+
 ## Introduzione
 
 Queste sono alcune delle convenzioni e delle decisioni che abbiamo preso come squadra di lavoro per quanto riguarda le applicazioni che scriviamo con il framework **Ruby On Rails**.  
