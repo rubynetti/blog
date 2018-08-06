@@ -28,8 +28,6 @@ volumes:
     driver: local
 ```
 
-<script src="https://gist.github.com/simonini/9a5c9d3ec040ce2d412562333792324c.js"></script>
-
 ## Impostare la _virtual memory_ del _kernel_ di Linux a 262144
 
 Per poter installare **Elasticsearch** tramite **docker compose** bisogna impostare il [max_map_count](https://www.kernel.org/doc/Documentation/sysctl/vm.txt) in modo adeguato alle sue esigenze, portando il valore da 65530 a 262144.
