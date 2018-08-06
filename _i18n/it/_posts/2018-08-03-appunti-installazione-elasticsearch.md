@@ -76,6 +76,14 @@ def search_data
 end
 ```
 
+## Come posso cercare?
+
+Per poter cercare attraverso il model basta usare il metodo di istanza **search** sul model. Ad esempio:
+
+```ruby
+Book.search("titolo del libro")
+```
+
 ## Fonti
   - [Stackoverflow - Quanta memoria dovrebbe usare vm?](https://stackoverflow.com/questions/11683850/how-much-memory-could-vm-use)
   - [Guida ufficiale di Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html)
