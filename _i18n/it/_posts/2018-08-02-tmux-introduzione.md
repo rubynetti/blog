@@ -8,7 +8,7 @@ toc: true
 
 # Tmux, introduzione all'uso
 
-## Introduzione all'uso di tmux
+## Introduzione all'uso
 
 Questo sono i miei appunti per imparare ad usare **tmux**.
 
