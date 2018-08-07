@@ -16,12 +16,13 @@ Questo sono i miei appunti per imparare ad usare **tmux**.
 - *ctrl + b e poi n* per andare alla finestra successiva.
 - *ctrl + b e poi NUMERO* per andare al numero della finestra desiderato.
 - *ctrl + b e poi virgola* per poter cambiare il nome alla finestra corrente.
+- *ctrl + b e poi x* per chiudere il pannello selezionato.
 
 ## Come posso configurare tmux?
 
 Per poter personalizzare *tmux* è necessario modificare il file tmux.conf che si trova all'interno della cartella principale dell'utente (_home folder_).
 
-## Come posso copiare e incollare con tmux?
+## Come posso copiare e incollare?
 
 Per poter compiare e incollare con tmux bisogna usare la seguente lista di operazioni:
 
@@ -29,15 +30,15 @@ Per poter compiare e incollare con tmux bisogna usare la seguente lista di opera
 - *ctrl + b e poi spazio* per poter selezionare la porzione di testo che si vuole copiare.
 - *ctrl + b e poi ]* per incollare il testo selezionato.
 
-## Come posso elencare le sessioni di tmux?
+## Come posso elencare le sessioni?
 
-Per elencare le sessioni di tmux puoi usare il semplice comando: "tmux ls".
+Per elencare le sessioni puoi usare il semplice comando: "tmux ls".
 
-## Come posso cambiare una sessione di tmux?
+## Come posso cambiare una sessione?
 
-Puoi cambiare una sessione di tmux schiacciando **control + b** e poi *s*.
+Puoi cambiare una sessione schiacciando **control + b** e poi *s*.
 
-## Come posso cancellare il buffer di tmux come con iterm?
+## Come posso cancellare il buffer come con iterm?
 
 Puoi cancellare il buffer come con iterm attraverso l'uso di una scorciatoia da impostare all'interno del file di configurazione di tmux.
 
@@ -47,10 +48,12 @@ bind -n C-k send-keys -R \; send-keys C-l \; clear-history
 
 Fonte: [notes.jerzygangi.com](http://notes.jerzygangi.com/the-only-way-that-actually-works-to-clear-the-screen-in-tmux/)
 
+# Extra
+
 ## Come posso contare il numero di parole in vi?
 
 Per poter controllare il numero di parole in vi puoi schiacciare g e poi control + g.
 
-## Come posso fare copia e incolla col mouse con tmux?
+## Come posso fare copia e incolla?
 
 Puoi copiare e incollare col mouse tenendo premuto il pulsante **shift**.
