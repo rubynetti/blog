@@ -12,8 +12,8 @@ author: Alessandro
 ---
 # Includi oppure estendi?
 
-Quando bisogna usare _include_ oppure _extend_?
-In Ruby quale è la differenza?
+In Ruby quando bisogna usare _include_ oppure _extend_?
+Quale è la differenza tra i due metodi?
 
 Entrambi gli strumenti servono a portare all'interno delle classi delle porzioni di codice appartenenti ai moduli.
 
@@ -27,7 +27,7 @@ Per far funzionare il meccanismo dei Concern è infatti necessario scrivere exte
 La differenza è relativamente semplice:
 
 - **include** aggiunge i metodi alla istanza della classe.
-- **extend** crea metodi di classe.
+- **extend** aggiungi metodi di classe.
 
 Quindi si usa il primo quando si vogliono aggiungere dei metodi all'oggeto istanziato e viene usato nella maggior parte dei casi.
 
