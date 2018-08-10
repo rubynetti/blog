@@ -1,8 +1,8 @@
 ---
 layout: post
 title: >-
-  Ruby appunti sulla la differenza tra include e extend e il loro rapporto con i
-  Concern di Rails.
+  Ruby: appunti sulla la differenza tra include e extend e il loro rapporto con
+  i Concern di Rails.
 date: 2018-08-10T09:34:18.787Z
 yoast_keyword: include
 description: Appunti per scoprire la differenza tra include e extend.
