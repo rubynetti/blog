@@ -6,7 +6,7 @@ title: >-
 date: 2018-08-10T09:34:18.787Z
 yoast_keyword: include
 description: Appunti per scoprire la differenza tra include e extend.
-categories: Ruby
+categories: ruby
 toc: false
 author: Alessandro
 ---
