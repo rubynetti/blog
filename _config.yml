@@ -28,7 +28,6 @@ exclude:
   - Dockerfile
   - convenzioni.md
   - netlify.toml
-  - admin
 
 exclude_from_localizations:
   - javascript
