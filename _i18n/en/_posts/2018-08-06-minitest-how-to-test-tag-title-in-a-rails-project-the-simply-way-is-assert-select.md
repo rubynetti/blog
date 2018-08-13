@@ -10,6 +10,7 @@ description: >-
   I use meta tag gem with Rails and i do often errors so i need it.
 categories: 'rails, test'
 toc: false
+author: Alessandro
 ---
 I need to test often about _title tag_ for SEO reason. The title tag is very important for Google and search motors for obvious reasons: is the title of the page and the first thing that user see when he have to choose a result from the search. How to test with **minitest** inside _Rails_?
 

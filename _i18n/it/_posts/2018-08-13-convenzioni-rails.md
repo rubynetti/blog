@@ -1,5 +1,10 @@
 ---
-title: 'Le convenzioni che usiamo con Ruby On Rails'
+layout: post
+title: Le convenzioni che usiamo con Ruby On Rails
+date: 2018-08-13T14:50:39.286Z
+yoast_keyword: rails
+categories: ruby, rails
+author: Alessandro
 ---
 
 ## Introduzione
