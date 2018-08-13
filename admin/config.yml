@@ -3,19 +3,6 @@ backend:
   repo: rubynetti/blog
   site_domain: rubynetti.it
 media_folder: "images/uploads"
-collections:
-  - name: "page_it" # Used in routes, e.g. /admin/collections/blog
-    label: "Page it" # Used in the UI
-    folder: "_i18n/it" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Focus Keyword", name: "yoast_keyword", widget: "string" }
-      - { label: "Meta Description", name: "description", widget: "string" }
-
   - name: "post_it" # Used in routes, e.g. /admin/collections/blog
     label: "Post it" # Used in the UI
     folder: "_i18n/it/_posts" # The path to the folder where the documents are stored
