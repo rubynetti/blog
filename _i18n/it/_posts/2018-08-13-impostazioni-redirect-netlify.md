@@ -3,7 +3,7 @@ layout: post
 title: >-
   Reindirizzamento su Netlify con Jekyll - Configurazione e impostazioni da
   usare.
-date: 2018-08-14T12:33:39.286Z
+date: 2018-08-13T22:33:39.286Z
 yoast_keyword: netlify
 description: Come configurare il redirect sul dominio principale.
 categories: rails
