@@ -21,3 +21,9 @@
 [[redirects]]
   from = "it/conventions/"
   to = "it/convenzioni-rails/"
+
+
+ [[redirects]]
+  from = "https://rubynetti.netlify.com/*"
+  to = "https://www.rubynetti.it/:splat"
+  status = 301
