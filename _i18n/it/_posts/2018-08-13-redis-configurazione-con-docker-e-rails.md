@@ -19,6 +19,8 @@ services:
   redis:
     image: 'redis:4.0-alpine'
     command: redis-server
+    ports:
+      - 6379:6379
     volumes:
       - 'redis_data:/data'
 volumes:
@@ -27,3 +29,19 @@ volumes:
 ```
 
 Questa soluzione permette di installare tramite docker-compose una istanza funzionante e operativa di redis.
+
+Bisogna poi comunicare a Rails come raggiungere il nostro server redis poichè Docker non è solito usare il nostro network in modo convenzionale.
+
+Per poterlo fare è necessario usare i nomi che abbiamo dato ai servizi.
+
+Quindi all'interno di _config/initializer/redis.rb_ vanno aggiunte le seguenti istruzioni.
+
+```ruby
+if Rails.env.development?
+  REDIS_CLIENT = Redis.new(host: 'redis', port: 6379, db: 1)
+else
+  REDIS_CLIENT = Redis.new(host: 'localhost', port: 6379, db: 1)
+end
+```
+
+Ovviamente questa è una configurazione che __non__ prevede l'utilizzo di redis con docker all'interno della produzione ma solo in ambiente di sviluppo.
