@@ -1,13 +1,11 @@
 ---
 layout: post
 title: Reindirizzamento su Netlify con Jekyll
-date: 2018-08-14T14:50:39.286Z
+date: 2018-08-14T12:33:39.286Z
 yoast_keyword: netlify
 categories: rails
 author: Alessandro
 ---
-
-#
 
 ## Singola pagina
 
