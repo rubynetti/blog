@@ -22,8 +22,7 @@
   from = "it/conventions/"
   to = "it/convenzioni-rails/"
 
-
- [[redirects]]
+[[redirects]]
   from = "https://rubynetti.netlify.com/*"
   to = "https://www.rubynetti.it/:splat"
   status = 301
