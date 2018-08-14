@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: rubynetti/blog
-  site_domain: rubynetti.it
+  site_domain: www.rubynetti.it
 media_folder: "images/uploads"
   - name: "post_it" # Used in routes, e.g. /admin/collections/blog
     label: "Post it" # Used in the UI
