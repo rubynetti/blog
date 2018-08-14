@@ -3,34 +3,35 @@ backend:
   repo: rubynetti/blog
   site_domain: www.rubynetti.it
   media_folder: "images/uploads"
-  - name: "post_it" # Used in routes, e.g. /admin/collections/blog
-    label: "Post it" # Used in the UI
-    folder: "_i18n/it/_posts" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Focus Keyword", name: "yoast_keyword", widget: "string" }
-      - { label: "Meta Description", name: "description", widget: "string" }
-      - { label: "Categories", name: "categories", widget: "string" }
-      - { label: "Toc", name: "toc", widget: "boolean" }
-      - { label: "Author", name: "author", widget: "string" }
+  collections:
+    - name: "post_it" # Used in routes, e.g. /admin/collections/blog
+      label: "Post it" # Used in the UI
+      folder: "_i18n/it/_posts" # The path to the folder where the documents are stored
+      create: true # Allow users to create new documents in this collection
+      slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
+      fields: # The fields for each document, usually in front matter
+        - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Publish Date", name: "date", widget: "datetime" }
+        - { label: "Body", name: "body", widget: "markdown" }
+        - { label: "Focus Keyword", name: "yoast_keyword", widget: "string" }
+        - { label: "Meta Description", name: "description", widget: "string" }
+        - { label: "Categories", name: "categories", widget: "string" }
+        - { label: "Toc", name: "toc", widget: "boolean" }
+        - { label: "Author", name: "author", widget: "string" }
 
-  - name: "post_en" # Used in routes, e.g. /admin/collections/blog
-    label: "Post en" # Used in the UI
-    folder: "_i18n/en/_posts" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Focus Keyword", name: "yoast_keyword", widget: "string" }
-      - { label: "Meta Description", name: "description", widget: "string" }
-      - { label: "Categories", name: "categories", widget: "string" }
-      - { label: "Toc", name: "toc", widget: "boolean" }
-      - { label: "Author", name: "author", widget: "string" }
+    - name: "post_en" # Used in routes, e.g. /admin/collections/blog
+      label: "Post en" # Used in the UI
+      folder: "_i18n/en/_posts" # The path to the folder where the documents are stored
+      create: true # Allow users to create new documents in this collection
+      slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
+      fields: # The fields for each document, usually in front matter
+        - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Publish Date", name: "date", widget: "datetime" }
+        - { label: "Body", name: "body", widget: "markdown" }
+        - { label: "Focus Keyword", name: "yoast_keyword", widget: "string" }
+        - { label: "Meta Description", name: "description", widget: "string" }
+        - { label: "Categories", name: "categories", widget: "string" }
+        - { label: "Toc", name: "toc", widget: "boolean" }
+        - { label: "Author", name: "author", widget: "string" }
