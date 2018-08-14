@@ -3,13 +3,14 @@ layout: post
 title: Reindirizzamento su Netlify con Jekyll
 date: 2018-08-14T12:33:39.286Z
 yoast_keyword: netlify
+description: Come configurare il redirect sul dominio principale.
 categories: rails
+toc: false
 author: Alessandro
 ---
-
 ## Singola pagina
 
-Per reindirizzamenti / redirect con jekyll su netlify puoi usare semplicemente il file _netlify.toml_ e configurarlo in questo modo:
+Per reindirizzamenti / redirect con jekyll su Netlify puoi usare semplicemente il file _netlify.toml_ e configurarlo in questo modo:
 
 ```toml
 [[redirects]]
@@ -21,7 +22,7 @@ La soluzione è semplice e funzionale.
 
 ## Dominio
 
-Come si può impostare il reindirizzamento con Netlify al nuovo dominio appena acquistato?
+Come si può impostare il reindirizzamento al nuovo dominio appena acquistato?
 
 Il nostro nuovo e scintillante dominio rubynetti.it è stato acquistato e impostato correttamente su Netsons.
 Ora il blog è visibile andando semplicemente su www.rubynetti.it al posto del vecchio e scomodo rubynetti.netlify.com.
@@ -33,7 +34,7 @@ Personalmente ho trovato che la soluzione più agevole sia impostare la propriet
 
 Tale soluzione sembra aver scongiurato problemi di penalizzazione o simili.
 
-Per configurare in modo corretto netlify al fine di fare reindirizzamenti in modo corretto è sufficiente impostare il file di configurazione nel seguente modo:
+Per configurare in modo corretto  al fine di fare reindirizzamenti in modo corretto è sufficiente impostare il file di configurazione nel seguente modo:
 
 ```toml
 [[redirects]]
