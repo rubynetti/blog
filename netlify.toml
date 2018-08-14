@@ -17,3 +17,7 @@
 [[redirects]]
   from = "/it/javascript/2018/04/17/vue-events.html"
   to = "/it/vue-events.html"
+
+[[redirects]]
+  from = "it/conventions/"
+  to = "it/convenzioni-rails/"
