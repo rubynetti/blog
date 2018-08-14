@@ -20,7 +20,7 @@ Questo sono i miei appunti per imparare ad usare **tmux**.
 
 ## Come posso configurarlo?
 
-Per poter personalizzare *tmux* è necessario modificare il file tmux.conf che si trova all'interno della cartella principale dell'utente (_home folder_).
+Per poterlo personalizzare è necessario modificare il file tmux.conf che si trova all'interno della cartella principale dell'utente (_home folder_).
 
 ## Come fargli aprire l'ultima cartella esplorata?
 
@@ -35,7 +35,7 @@ bind c new-window -c "#{pane_current_path}"
 
 ## Come posso copiare e incollare?
 
-Per poter compiare e incollare con tmux bisogna usare la seguente lista di operazioni:
+Per poter compiare e incollare bisogna usare la seguente lista di operazioni:
 
 - *ctrl + b e poi [* in questo modo si entra nella modalità copia.
 - *ctrl + b e poi spazio* per poter selezionare la porzione di testo che si vuole copiare.
@@ -53,7 +53,7 @@ Puoi cambiare una sessione schiacciando **control + b** e poi *s*.
 
 ## Come posso cancellare il buffer come con iterm?
 
-Puoi cancellare il buffer come con iterm attraverso l'uso di una scorciatoia da impostare all'interno del file di configurazione di tmux.
+Puoi cancellare il buffer come con iterm attraverso l'uso di una scorciatoia da impostare all'interno del file di configurazione.
 
 ```bash
 bind -n C-k send-keys -R \; send-keys C-l \; clear-history
