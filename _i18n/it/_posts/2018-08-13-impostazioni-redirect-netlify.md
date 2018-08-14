@@ -1,4 +1,13 @@
-# Reindirizzamento / Redirect su Netlify con Jekyll
+---
+layout: post
+title: Reindirizzamento su Netlify con Jekyll
+date: 2018-08-14T14:50:39.286Z
+yoast_keyword: netlify
+categories: rails
+author: Alessandro
+---
+
+#
 
 ## Singola pagina
 
