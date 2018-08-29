@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/rubynetti/teatro-vecchio
-  revision: 02775f9c83317b63d88bfd7b8bb932374e671878
+  revision: f2a6b0ca1bf2d9278080b196e3aac48781e056ef
   specs:
     teatro-vecchio (0.2.9)
       jekyll (~> 3.7)
@@ -60,11 +60,11 @@ GEM
     mercenary (0.3.6)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
-    public_suffix (3.0.2)
+    public_suffix (3.0.3)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-    rouge (3.2.0)
+    rouge (3.2.1)
     ruby_dep (1.5.0)
     safe_yaml (1.0.4)
     sass (3.5.7)
