@@ -12,8 +12,6 @@ categories: Rails
 toc: false
 author: Alessandro Descovi
 ---
-![Ruby On Rails Venezia Mestre](/images/uploads/ruby-rails-venezia-mestre.jpeg)
-
 ## Chi?
 
 Ciao, siamo Rubynetti e offriamo servizi di sviluppo web sulla base del framework **Ruby on Rails**, la nostra sede è attualmente a **Mestre Venezia.**
@@ -29,10 +27,14 @@ Per chi non sapesse cos'è Ruby On Rails, vi basti sapere che è il framework ch
 
 Ha inoltre influenzato il settore col suo design e col suo approccio che mira alla produttività e alla facilità di sviluppo.
 
+![null](/images/uploads/codice.jpeg)
+
 ### Assistenza su applicazioni esistenti / legacy
 
 Offriamo assistenza anche su applicazioni esistenti realizzate con Rails per riparazioni e miglioramenti.
 Siamo soprattutto specializzati nelle versioni 4 e successive.
+
+![Ruby On Rails Venezia Mestre - Legacy](/images/uploads/ruby-rails-venezia-mestre.jpeg)
 
 ## Come?
 
@@ -43,7 +45,9 @@ Seguiamo pratiche agili tramite una nostra personale interpretazione che ci perm
 
 ## Dove?
 
-Ci potete trovare in via Teatro Vecchio numero due in centro a Mestre, Venezia, davanti piazza Barche.
+Ci potete trovare tra le calli di Venezia ma il nostro ufficio al momento è in via Teatro Vecchio numero due in centro a Mestre, davanti piazza Barche.
+
+![Mestre](/images/uploads/mestre_orologio.jpg)
 
 ## Risultati
 
@@ -58,3 +62,5 @@ Abbiamo realizzato molti progetti di cui diversi sono in uso interno per varie a
 * [Alessandro Descovi](mailto:alessandro@venezia86.it)
 * [Giacomo Bertoldi](mailto:giacomo@venezia86.it)
 * [Francesco Meneghini](mailto:francesco@venezia86.it)
+
+![Immagine di Venezia](/images/uploads/venezia.jpeg)
