@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Le convenzioni che usiamo con Ruby On Rails
+title: 'Ruby On Rails, le convenzioni che usiamo'
 date: 2018-08-13T14:50:39.286Z
 yoast_keyword: rails
 description: Convenzioni che usiamo per la scrittura di codice ruby on rails.
