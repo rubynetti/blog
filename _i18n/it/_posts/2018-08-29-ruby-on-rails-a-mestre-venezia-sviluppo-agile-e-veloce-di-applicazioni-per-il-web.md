@@ -16,7 +16,7 @@ author: Alessandro Descovi
 
 ## Chi?
 
-Ciao, siamo Rubynetti e offriamo servizi di sviluppo web sulla base del framework **Ruby on Rails, **la nostra sede è attualmente a **Mestre Venezia.**
+Ciao, siamo Rubynetti e offriamo servizi di sviluppo web sulla base del framework **Ruby on Rails**, la nostra sede è attualmente a **Mestre Venezia.**
 
 ## Cosa?
 
