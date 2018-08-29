@@ -1,7 +1,11 @@
 ---
 layout: post
-title: Adding the Dockerfile
+title: 'Docker: Adding the Dockerfile'
+date: 2018-08-29T08:48:27.189Z
+yoast_keyword: docker
+description: Setup docker file for Rails Development.
 categories: docker rails
+toc: true
 author: Giacomo Bertoldi
 ---
 
@@ -43,7 +47,7 @@ Every line in it is explained in detail below.
 #### Select the base image
 
 First, we should choose an existing image to build on top of.
-Since we want to dockerize a Ruby on Rails app, we can use one of the [Ruby images](ciao) on the Docker Hub.
+Since we want to dockerize a Ruby on Rails app, we can use one of the [Ruby images](https://hub.docker.com/_/ruby/) on the Docker Hub.
 
 _FROM_ let us do that.
 I'm choosing the latest release with ruby 2.5 on Debian.
