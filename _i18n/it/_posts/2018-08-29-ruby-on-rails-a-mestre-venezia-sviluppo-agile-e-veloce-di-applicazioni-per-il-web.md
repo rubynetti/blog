@@ -1,8 +1,8 @@
 ---
 layout: post
 title: >-
-  Ruby on Rails a Mestre (Venezia), sviluppo agile e veloce di applicazioni per
-  il web.
+  Ruby on Rails a Mestre Venezia, sviluppo agile e veloce di applicazioni per il
+  web.
 date: 2018-08-29T05:01:11.958Z
 yoast_keyword: rails
 description: >-
@@ -12,9 +12,11 @@ categories: Rails
 toc: false
 author: Alessandro Descovi
 ---
+![Ruby On Rails Venezia Mestre](/images/uploads/ruby-rails-venezia-mestre.jpeg)
+
 ## Chi?
 
-Ciao, siamo Rubynetti e offriamo servizi di sviluppo web sulla base del framework **Ruby on Rails, **la nostra sede è attualmente a **Mestre (Venezia).**
+Ciao, siamo Rubynetti e offriamo servizi di sviluppo web sulla base del framework **Ruby on Rails, **la nostra sede è attualmente a **Mestre Venezia.**
 
 ## Cosa?
 
@@ -41,20 +43,18 @@ Seguiamo pratiche agili tramite una nostra personale interpretazione che ci perm
 
 ## Dove?
 
-Ci potete trovare in via Teatro Vecchio in centro a Mestre (Venezia), davanti piazza Barche.
+Ci potete trovare in via Teatro Vecchio numero due in centro a Mestre, Venezia, davanti piazza Barche.
 
 ## Risultati
 
 Abbiamo realizzato molti progetti di cui diversi sono in uso interno per varie aziende ma abbiamo anche qualche risultato disponibile online tra cui:
 
-- [Significato Canzone](https://significatocanzone.it/) un sito per raccontare e condividere i significati delle canzoni, nel 2018, è stato utile a quasi due milioni di persone che lo hanno visitato (5000 persone al giorno). L'applicazione pur con un piccolissimo server non ha mai avuto problemi gravi di degrado delle performance.
-
-- [PlaceOf](http://placeof.it/it/welcome/intro) Placeof è una applicazione che racconta i libri in base ai luoghi narrati. Il sistema funziona anche tramite libero contributo delle persone.
-
-- [Spid Rails](https://github.com/italia/spid-rails) In occasione di un hackaton, che abbiamo vinto, svolto a Venezia, siamo diventati i responsabili della libreria ruby-rails per l'autenticazione tramite protocollo spid.
+* [Significato Canzone](https://significatocanzone.it/) un sito per raccontare e condividere i significati delle canzoni, nel 2018, è stato utile a quasi due milioni di persone che lo hanno visitato (5000 persone al giorno). L'applicazione pur con un piccolissimo server non ha mai avuto problemi gravi di degrado delle performance.
+* [PlaceOf](http://placeof.it/it/welcome/intro) Placeof è una applicazione che racconta i libri in base ai luoghi narrati. Il sistema funziona anche tramite libero contributo delle persone.
+* [Spid-Rails](https://github.com/italia/spid-rails) In occasione di un hackaton, che abbiamo vinto, svolto a Venezia, siamo diventati i responsabili della libreria ruby-rails per l'autenticazione tramite protocollo spid.
 
 ## Contatti
 
-- [Alessandro Descovi](alessandro@venezia86.it)
-- [Giacomo Bertoldi](giacomo@venezia86.it)
-- [Francesco Meneghini](francesco@venezia86.it)
+* [Alessandro Descovi](mailto:alessandro@venezia86.it)
+* [Giacomo Bertoldi](mailto:giacomo@venezia86.it)
+* [Francesco Meneghini](mailto:francesco@venezia86.it)
