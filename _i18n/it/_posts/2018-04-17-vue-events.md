@@ -9,11 +9,12 @@ description: >-
   Appunti su vue.js in una interazione col mio progetto di Rails. L'elenco dei
   problemi che ho incontrato con questa nuova libreria javascript.
 categories: 'javascript, vue'
-toc: false
+toc: true
+author: Alessandro Descovi
 ---
 # Approcci con Vue.js
 
-Nella board di [momento.cc](momento.cc) (una applicazione *Rails*) ho bisogno di aggiungere elementi interattivi e dinamici avanzati. Per questo motivo ho deciso di fare delle sperimentazione con la libreria javascript **Vue.js**.
+Nella board di [momento.cc](http://momento.cc) (una applicazione *Rails*) ho bisogno di aggiungere elementi interattivi e dinamici avanzati. Per questo motivo ho deciso di fare delle sperimentazione con la libreria javascript **Vue.js**.
 
 Tra i problemi che ho incontrato nel mio primo approccio ho incontrato i seguenti problemi:
 
