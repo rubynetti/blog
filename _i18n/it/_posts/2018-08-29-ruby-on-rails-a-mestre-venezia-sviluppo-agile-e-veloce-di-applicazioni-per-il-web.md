@@ -27,8 +27,6 @@ Per chi non sapesse cos'è Ruby On Rails, vi basti sapere che è il framework ch
 
 Ha inoltre influenzato il settore col suo design e col suo approccio che mira alla produttività e alla facilità di sviluppo.
 
-![Codice sviluppo ruby on rails, Venezia](/images/uploads/codice.jpeg)
-
 ### Assistenza su applicazioni esistenti / legacy
 
 Offriamo assistenza anche su applicazioni esistenti realizzate con Rails per riparazioni e miglioramenti.
@@ -61,4 +59,5 @@ Abbiamo realizzato molti progetti di cui diversi sono in uso interno per varie a
 * [Giacomo Bertoldi](mailto:giacomo@venezia86.it)
 * [Francesco Meneghini](mailto:francesco@venezia86.it)
 
+![Codice sviluppo ruby on rails, Venezia](/images/uploads/codice.jpeg)
 ![Immagine di Venezia](/images/uploads/venezia.jpeg)
