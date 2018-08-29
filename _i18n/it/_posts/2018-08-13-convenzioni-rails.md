@@ -3,7 +3,9 @@ layout: post
 title: Le convenzioni che usiamo con Ruby On Rails
 date: 2018-08-13T14:50:39.286Z
 yoast_keyword: rails
-categories: ruby, rails
+description: Convenzioni che usiamo per la scrittura di codice ruby on rails.
+categories: 'ruby, rails'
+toc: true
 author: Alessandro
 ---
 
@@ -29,7 +31,7 @@ Utilizzo di risorse REST resource come strumento di guida.
 
 Referenze:
 
-- [Derek Prior - In Relentless Pursuit of REST](In Relentless Pursuit of REST)
+- [Derek Prior - In Relentless Pursuit of REST](https://speakerdeck.com/derekprior/in-relentless-pursuit-of-rest)
 - [Form Objects](https://robots.thoughtbot.com/activemodel-form-objects)
 
 ### Pensa semplice, noioso è meglio.
