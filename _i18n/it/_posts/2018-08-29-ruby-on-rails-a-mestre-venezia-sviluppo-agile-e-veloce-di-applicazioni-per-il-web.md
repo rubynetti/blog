@@ -60,4 +60,3 @@ Abbiamo realizzato molti progetti di cui diversi sono in uso interno per varie a
 * [Francesco Meneghini](mailto:francesco@venezia86.it)
 
 ![Codice sviluppo ruby on rails, Venezia](/images/uploads/codice.jpeg)
-![Immagine di Venezia](/images/uploads/venezia.jpeg)
