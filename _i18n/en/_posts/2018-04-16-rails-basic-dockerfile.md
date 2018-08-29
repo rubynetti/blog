@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Docker: Adding the Dockerfile'
-date: 2018-08-29T08:48:27.189Z
+date: 2018-04-16T08:48:27.189Z
 yoast_keyword: docker
 description: Setup docker file for Rails Development.
 categories: docker rails
